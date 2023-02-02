@@ -121,6 +121,64 @@ section.hero .home-text{
 }
 
 
+/* About Section */
+#About-Page{
+    /*** Change height here to decrease or increase size of about container. */
+    /* border: 2px solid black; */
+    height: 90vh;
+    width: 98.5vw;
+}
+
+#About-Page > .aboutEle{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#About-Page  #aboutText{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingStyle{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 73px;
+    color: var(--primary);
+}
+
+#About-Page  #aboutImage{
+    /* border: 2px solid blue; */
+    height: 80%;
+    width: 40%;
+}
+
+#About-Page > .aboutEle > #aboutImage > .imgContainer{
+    height: 90%;
+    width: 90%;
+    /* border: 2px solid green; */
+    margin: 5% auto;
+}
+
+#About-Page > .aboutEle > #aboutImage > .imgContainer > img{
+    height: 70%;
+    width: 100%;
+}
+
+.boldMe{
+    font-weight: 400;
+    font-size: 54px;
+    color: var(--primary-dark);
+}
+
+
 /* Footer setion*/
 footer {
     padding-top: 279px;
