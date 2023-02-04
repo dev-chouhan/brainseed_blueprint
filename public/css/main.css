@@ -316,10 +316,16 @@ section.hero .home-text {
     border: 1px solid white;
 }
 
+/* Common Parts */
+
 .UnderLineForTxt{
     border-bottom: 3px solid var(--gray-1);
     width: 18%;
 
+}
+
+.container-fuild{
+    margin-left: -0.6vw;
 }
 
 /* Benefits of joinig Us */
@@ -328,6 +334,92 @@ section.hero .home-text {
     height: 100vh;
     width: 98.5vw;
 }
+
+/* Team Members page */
+#teamMembersPage{
+    border: 2px solid black;
+    height: 130vh;
+    width: 98.5vw;
+}
+
+#teamMembersPage > #teamMembersArea{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 75%;
+    margin: auto;
+}
+
+#teamMembersPage > #teamMembersArea > #founderTeam{
+    width: 100%;
+    height: 45%;
+    /* border: 2px solid green; */
+}
+
+#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards > .card{
+    margin: 0 2rem;
+}
+
+#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards > .card > .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards > .card > img{
+    height: 60%;
+    width: 100%;
+}
+
+
+#teamMembersPage > #teamMembersArea > #coreTeam{
+    width: 100%;
+    height: 55%;
+    /* border: 2px solid darkmagenta; */
+}
+
+#teamMembersPage > #teamMembersArea > #coreTeam > .CoreMembersCards{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+}
+
+#teamMembersPage > #teamMembersArea > #coreTeam > .CoreMembersCards > #coreMembersCarosoul{
+    width: 100%;
+    height: 90%;
+    border: 2px solid blue;
+}
+
+#teamMembersPage > #teamMembersArea > #coreTeam > .CoreMembersCards > #coreMemberButton{
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#teamMembersPage > #teamMembersArea  .teamMembersHeading{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
 
 /* Footer setion*/
 footer {

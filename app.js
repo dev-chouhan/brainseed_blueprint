@@ -17,6 +17,9 @@ app.get("/", function(req, res){
     res.render("home");
 })
 
+app.get('/coremem', function(req, res){
+    res.render("coreMembers");
+})
 
 // Post requests
 
