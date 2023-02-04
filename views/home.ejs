@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,18 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/dfebc2aeb7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Navbar section -->
+    <!--! Navbar section **Start-->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <!-- Brand here -->
-                <img class="" src="" alt="hero-img" class="mw-50">
+                <img class="" src="" alt="hero-img" class="mw-50" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,100 +29,209 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link active" aria-current="page" href="#homePage">Home</a>
+                    <a class="nav-link" href="#About-Page">About</a>
                     <a class="nav-link" href="#">Team</a>
                     <a class="nav-link" href="#">Events</a>
                     <a class="nav-link" href="#">Blogs</a>
                 </div>
                 <a href="#" class="btn btn-outline-secondary shadow-sm d-sm d-block ms-4">Contact Us</a>
-
                 <div class="dropdown ms-3">
-                    <a class="btn btn-primary  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    <a class="btn btn-primary dropdown-toggle joinNavBtn" href="#" role="button" id="dropdownMenuLink"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Join Us
                     </a>
-
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><a class="dropdown-item" href="#">Core Team</a></li>
                         <li><a class="dropdown-item" href="#">Volunteer Team</a></li>
                         <li><a class="dropdown-item" href="#">Collaborations</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </nav>
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="container">
-            <div class="row">
-                <!-- Text -->
-                <div class="col-md-6">
-                    <div class="text">BrainSeed Networks Community!</div>
-                    <div class="hashtag">#BuildingSuccessTogether</div>
-                    <p class="home-text">
-                        "Empowering tech enthusiasts, one seed at a time".
-                        At BrainSeed Networks, Our community is dedicated
-                        to empowering tech enthusiasts and fostering a love for
-                        technology.
-                    </p>
-                    <div class="buttons">
-                        <a href="#" class="btn btn-primary"><i class="icon fas fa-rocket"></i> <span
-                                class="ms-2">Contact Us</span></a>
-                        <a href="#" class="btn btn-outline-secondary ms-3"><i class="icon fas fa-handshake"></i><span
-                                class="ms-2"> Join
-                                Us</span></a>
+    <!--! Navbar section **ends-->
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <!--! Hero/Home section **starts-->
+        <section class="hero" id="homePage">
+            <div class="container">
+                <div class="row">
+                    <!-- Text -->
+                    <div class="col-md-6">
+                        <div class="text">BrainSeed Networks Community!</div>
+                        <div class="hashtag">#BuildingSuccessTogether</div>
+                        <p class="home-text">
+                            "Empowering tech enthusiasts, one seed at a time". At BrainSeed
+                            Networks, Our community is dedicated to empowering tech
+                            enthusiasts and fostering a love for technology.
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary" style="border: none;"><i class="icon fas fa-rocket"></i>
+                                <span class="ms-2">Contact Us</span></a>
+                            <a href="#" class="btn btn-outline-secondary ms-3"><i
+                                    class="icon fas fa-handshake"></i><span class="ms-2"> Join Us</span></a>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-md-6 homeImg">
+                        <img src=".\images\home-img.png" alt="hero-img" class="w-100" />
                     </div>
                 </div>
-                <!-- Image -->
-                <div class="col-md-6">
-                    <img src=".\images\home-img.png" alt="hero-img" class="w-100">
+            </div>
+        </section>
+        <!--! Hero/Home section **ends-->
+
+        <!--! About Page **start -->
+        <section class="container-fluid" id="About-Page">
+            <div class="aboutEle">
+                <div id="aboutText">
+                    <div class="jumbotron mx-5">
+                        <div
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h1 class="display-4 headingStyle">
+                                <span class="boldMe">W</span>ho we are and
+                                <span class="boldMe">W</span>hat we do ?
+                            </h1>
+                            <div class="UnderLineForTxt" style="margin-left: -5rem;"></div>
+                        </div>
+                        <br><br>
+                        <p class="lead">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptates animi optio, sint aliquid sequi, unde fugit nulla
+                            similique reiciendis, quisquam quos. Omnis consequuntur inventore
+                            beatae nostrum nobis quae adipisci porro odio, veniam quisquam.
+                            Laudantium eos explicabo, sapiente soluta, voluptas officia aut
+                            odit autem sunt atque vel iste sequi consectetur? Hic non delectus
+                            harum repellat debitis libero rerum sapiente in sunt maxime
+                            voluptatibus nulla qui aperiam perspiciatis nemo, possimus
+                            quibusdam! Quod quia perspiciatis accusantium iure autem modi aut
+                            aliquid aspernatur. Itaque.
+                        </p>
+                        <hr class="my-4" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+                            inventore obcaecati laudantium minus et at, maiores aut commodi
+                            tempora, quas, quam ad autem? Maxime, vitae vero porro accusantium
+                            perspiciatis alias!
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg my-4"
+                                style="font-size: 18px; font-weight: 500; border: none" href="#" role="button">Learn
+                                more</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="aboutImage">
+                    <div class="imgContainer">
+                        <img src="./images/aboutImg3.png" alt="About Img" />
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!--! About page **end -->
 
-
-
-    <!--! About Page start -->
-
-    <section class="container-fluid" id="About-Page">
-        <div class="aboutEle">
-            <div id="aboutText">
-                <div class="jumbotron mx-5">
-                    <h1 class="display-4 headingStyle" style="margin: 0 0 7% 5%;"> <span class="boldMe">W</span>ho we
-                        are and <span class="boldMe">W</span>hat we do ?</h1>
-                    <p class="lead"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi optio,
-                        sint aliquid sequi, unde fugit nulla similique reiciendis, quisquam quos. Omnis consequuntur
-                        inventore beatae nostrum nobis quae adipisci porro odio, veniam quisquam. Laudantium eos
-                        explicabo, sapiente soluta, voluptas officia aut odit autem sunt atque vel iste sequi
-                        consectetur? Hic non delectus harum repellat debitis libero rerum sapiente in sunt maxime
-                        voluptatibus nulla qui aperiam perspiciatis nemo, possimus quibusdam! Quod quia perspiciatis
-                        accusantium iure autem modi aut aliquid aspernatur. Itaque. </p>
-                    <hr class="my-4">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit inventore obcaecati laudantium
-                        minus et at, maiores aut commodi tempora, quas, quam ad autem? Maxime, vitae vero porro
-                        accusantium perspiciatis alias!</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg my-4" style="font-size: 18px; font-weight: 500
-                        ; border: none;" href="#" role="button">Learn more</a>
-                    </p>
+        <!-- ! Join us on other platforms **start-->
+        <section class="container-fuild" id="joinUsOnPlatforms">
+            <div id="joinPlatforms">
+                <div class="joinPlatformHeading">
+                    <h1 class="display-4 headingStyle" style="font-size: 6rem;">
+                        <span class="boldMe" style="font-size: 7rem;">J</span>oin Us
+                        <span class="boldMe" style="font-size: 7rem;">H</span>ere...
+                    </h1>
+                    <div class="UnderLineForTxt my-2" style="margin-left: -5.5rem; width: 8%;"></div>
+                </div>
+                <div id="joinPlatformsDetail" class="my-5">
+                    <div class="my-4"></div>
+                    <div class="containerJoinPlatforms">
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp1">
+                                    <i class="fa fa-youtube-play" style="font-size: 5rem;" aria-hidden="true"></i>
+                                    <h5 class="card-title">YouTube Content</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa quam! Nostrum, vel
+                                        ea?</p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp2">
+                                    <i class="fa fa-facebook-official" style="font-size: 5rem;" aria-hidden="true"></i>
+                                    <h5 class="card-title">Facebook</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa quam! Nostrum, vel
+                                        ea?</p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp3">
+                                    <i class="fa fa-telegram" style="font-size: 5rem;" aria-hidden="true"></i>
+                                    <h5 class="card-title">Telegram Group</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa quam! Nostrum, vel
+                                        ea?</p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp4">
+                                    <i class="fa fa-linkedin-square" style="font-size: 5rem;" aria-hidden="true"></i>
+                                    <h5 class="card-title">LinkedIN Page</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa quam! Nostrum, vel
+                                        ea?</p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp5">
+                                    <i class="fa fa-github-square" style="font-size: 5rem;" aria-hidden="true"></i>
+                                    <h5 class="card-title">Open Source Projects</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa quam! Nostrum, vel
+                                        ea?</p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp6">
+                                    <i class="fa fa-whatsapp" style="font-size: 5rem;" aria-hidden="true"></i>
+                                    <h5 class="card-title">Whatsapp</h5>
+                                    <p class="card-text my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa quam! Nostrum, vel
+                                        ea?</p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4"></div>
                 </div>
             </div>
-            <div id="aboutImage">
-                <div class="imgContainer">
-                    <img src="./images/aboutImg3.png" alt="About Img">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+        <!-- ! Join us on other platforms **ends-->
+
+        <!-- ! Benefits of joining us **starts -->
+        <section class="fuild-container" id="benefitsOfJoiningUs">
+            
+        </section>
+        <!-- ! Benefits of joining us **ends -->
 
 
-
-    <!--! About page end -->
-
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>

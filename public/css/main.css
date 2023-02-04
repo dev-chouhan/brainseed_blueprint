@@ -3,8 +3,8 @@
 
 /*Color setup*/
 :root {
-    --primary: rgb(0,80,0);
-    --primary-dark:  rgb(0,64,0) ;
+    --primary: rgb(0, 80, 0);
+    --primary-dark: rgb(0, 64, 0);
     --primary-light: rgb(1, 126, 1);
     --black: #010101;
     --gray-1: #788190;
@@ -16,6 +16,9 @@
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--body);
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 /*Setup components*/
@@ -38,6 +41,19 @@ body {
     background-color: var(--primary-dark);
 }
 
+.joinNavBtn {
+    height: 3.5rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.joinNavBtn:focus {
+    background-color: #fefefe;
+    color: black;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
 .btn-outline-secondary {
     border: 1px solid var(--gray-2);
     color: var(--primary-dark);
@@ -46,7 +62,7 @@ body {
 .btn-outline-secondary:hover {
     background-color: var(--primary);
     border: 1px solid var(--gray-2);
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .btn-outline-secondary:focus {
@@ -95,19 +111,25 @@ section.hero .text {
     color: var(--primary);
 }
 
-section.hero .hashtag{
+section.hero .hashtag {
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
     color: var(--primary-light);
 }
 
-section.hero .home-text{
+section.hero .home-text {
     padding-top: 35px;
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
     color: #788190;
+}
+
+.homeImg {
+    margin-top: -4rem;
+    margin-left: 5rem;
+    width: 47rem;
 }
 
 .buttons {
@@ -122,14 +144,14 @@ section.hero .home-text{
 
 
 /* About Section */
-#About-Page{
+#About-Page {
     /*** Change height here to decrease or increase size of about container. */
     /* border: 2px solid black; */
     height: 90vh;
     width: 98.5vw;
 }
 
-#About-Page > .aboutEle{
+#About-Page>.aboutEle {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -138,7 +160,7 @@ section.hero .home-text{
     align-items: center;
 }
 
-#About-Page  #aboutText{
+#About-Page #aboutText {
     /* border: 2px solid red; */
     height: 80%;
     width: 60%;
@@ -147,37 +169,165 @@ section.hero .home-text{
     align-items: center;
 }
 
-.headingStyle{
+.headingStyle {
     font-weight: 300;
     font-size: 50px;
     line-height: 73px;
     color: var(--primary);
 }
 
-#About-Page  #aboutImage{
+#About-Page #aboutImage {
     /* border: 2px solid blue; */
     height: 80%;
     width: 40%;
 }
 
-#About-Page > .aboutEle > #aboutImage > .imgContainer{
+#About-Page>.aboutEle>#aboutImage>.imgContainer {
     height: 90%;
     width: 90%;
     /* border: 2px solid green; */
     margin: 5% auto;
 }
 
-#About-Page > .aboutEle > #aboutImage > .imgContainer > img{
+#About-Page>.aboutEle>#aboutImage>.imgContainer>img {
     height: 70%;
     width: 100%;
 }
 
-.boldMe{
+.boldMe {
     font-weight: 400;
     font-size: 54px;
     color: var(--primary-dark);
 }
 
+/* Join Us on other platforms */
+#joinUsOnPlatforms{
+    height: 100vh;
+    width: 98vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#joinUsOnPlatforms > #joinPlatforms{
+    /* border: 2px solid blue; */
+    height: 95%;
+    width: 85%;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > .joinPlatformHeading{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail{
+    width: 100%;
+    height: 85%;
+    /* border: 2px solid black; */
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6% 3%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform {
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    width: 100%;
+    height: 100%;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card{
+    height: 100%;
+    width: 100%;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out 100ms
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp1{
+    background-color: #FF0000;
+    color: #fefefe;
+}
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp2{
+    background-color: #0165E1;
+    color: #fefefe;
+}
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp3{
+    background-color: #0088cc;
+    color: #fefefe;
+}
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp4{
+    background-color: #0e76a8;
+    color: #fefefe;
+}
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp5{
+    background-color: #333333;
+    color: #fefefe;
+}
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp6{
+    background-color: #128C7E;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body > h5{
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body > a{
+    font-size: 1rem;
+    padding: 7px 12px;
+    margin-top: 1rem;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body:hover > a{
+    border: 1px solid white;
+    color: white;
+}
+
+#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body > a:hover{
+    background-color: transparent;
+    font-weight: 700;
+    color: white;
+    border: 1px solid white;
+}
+
+.UnderLineForTxt{
+    border-bottom: 3px solid var(--gray-1);
+    width: 18%;
+
+}
+
+/* Benefits of joinig Us */
+#benefitsOfJoiningUs{
+    border: 2px solid black;
+    height: 100vh;
+    width: 98.5vw;
+}
 
 /* Footer setion*/
 footer {
@@ -244,4 +394,3 @@ footer .copy {
         margin-bottom: 44px;
     }
 }
-
