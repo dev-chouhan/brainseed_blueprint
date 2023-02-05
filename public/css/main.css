@@ -129,7 +129,7 @@ section.hero .home-text {
 .homeImg {
     margin-top: -4rem;
     margin-left: 5rem;
-    width: 47rem;
+    width: 40rem;
 }
 
 .buttons {
@@ -201,7 +201,7 @@ section.hero .home-text {
 }
 
 /* Join Us on other platforms */
-#joinUsOnPlatforms{
+#joinUsOnPlatforms {
     height: 100vh;
     width: 98vw;
     /* border: 2px solid red; */
@@ -210,13 +210,13 @@ section.hero .home-text {
     justify-content: center;
 }
 
-#joinUsOnPlatforms > #joinPlatforms{
+#joinUsOnPlatforms>#joinPlatforms {
     /* border: 2px solid blue; */
     height: 95%;
     width: 85%;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > .joinPlatformHeading{
+#joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading {
     /* border: 2px solid black; */
     width: 100%;
     height: 15%;
@@ -227,13 +227,13 @@ section.hero .home-text {
     margin-top: -5rem;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
     width: 100%;
     height: 85%;
     /* border: 2px solid black; */
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms {
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -248,68 +248,73 @@ section.hero .home-text {
     /* border: 2px solid red; */
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform {
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform {
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     width: 100%;
     height: 100%;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card {
     height: 100%;
     width: 100%;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    height: 22rem;
     transition: all 0.5s ease-in-out 100ms
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp1{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp1 {
     background-color: #FF0000;
     color: #fefefe;
 }
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp2{
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp2 {
     background-color: #0165E1;
     color: #fefefe;
 }
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp3{
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp3 {
     background-color: #0088cc;
     color: #fefefe;
 }
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp4{
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp4 {
     background-color: #0e76a8;
     color: #fefefe;
 }
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp5{
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp5 {
     background-color: #333333;
     color: #fefefe;
 }
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card:hover > .jp6{
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp6 {
     background-color: #128C7E;
     color: #fefefe;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body > h5{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>h5 {
     font-weight: 700;
     margin: 1rem 0;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body > a{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>a {
     font-size: 1rem;
     padding: 7px 12px;
-    margin-top: 1rem;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body:hover > a{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body:hover>a {
     border: 1px solid white;
     color: white;
 }
 
-#joinUsOnPlatforms > #joinPlatforms > #joinPlatformsDetail > .containerJoinPlatforms > .gridItemForJoinPlatform > .card > .card-body > a:hover{
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>a:hover {
     background-color: transparent;
     font-weight: 700;
     color: white;
@@ -318,87 +323,88 @@ section.hero .home-text {
 
 /* Common Parts */
 
-.UnderLineForTxt{
+.UnderLineForTxt {
     border-bottom: 3px solid var(--gray-1);
     width: 18%;
 
 }
 
-.container-fuild{
+.container-fuild {
     margin-left: -0.6vw;
 }
 
 /* Benefits of joinig Us */
-#benefitsOfJoiningUs{
+#benefitsOfJoiningUs {
     border: 2px solid black;
     height: 100vh;
     width: 98.5vw;
 }
 
 /* Team Members page */
-#teamMembersPage{
+#teamMembersPage {
     border: 2px solid black;
     height: 130vh;
     width: 98.5vw;
 }
 
-#teamMembersPage > #teamMembersArea{
+#teamMembersPage>#teamMembersArea {
     /* border: 2px solid red; */
     height: 100%;
     width: 75%;
     margin: auto;
 }
 
-#teamMembersPage > #teamMembersArea > #founderTeam{
+#teamMembersPage>#teamMembersArea>#founderTeam {
     width: 100%;
     height: 45%;
     /* border: 2px solid green; */
 }
 
-#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards{
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
     width: 100%;
     height: 80%;
     /* border: 2px solid red; */
+    justify-content: center;
     display: flex;
     flex-direction: row;
 }
 
-#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards > .card{
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
     margin: 0 2rem;
 }
 
-#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards > .card > .card-body{
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#teamMembersPage > #teamMembersArea > #founderTeam > .founderMembersCards > .card > img{
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>img {
     height: 60%;
     width: 100%;
 }
 
 
-#teamMembersPage > #teamMembersArea > #coreTeam{
+#teamMembersPage>#teamMembersArea>#coreTeam {
     width: 100%;
     height: 55%;
     /* border: 2px solid darkmagenta; */
 }
 
-#teamMembersPage > #teamMembersArea > #coreTeam > .CoreMembersCards{
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards {
     width: 100%;
     height: 80%;
     /* border: 2px solid red; */
 }
 
-#teamMembersPage > #teamMembersArea > #coreTeam > .CoreMembersCards > #coreMembersCarosoul{
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
     width: 100%;
     height: 90%;
     border: 2px solid blue;
 }
 
-#teamMembersPage > #teamMembersArea > #coreTeam > .CoreMembersCards > #coreMemberButton{
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton {
     width: 100%;
     height: 10%;
     /* border: 2px solid black; */
@@ -408,7 +414,7 @@ section.hero .home-text {
 }
 
 
-#teamMembersPage > #teamMembersArea  .teamMembersHeading{
+#teamMembersPage>#teamMembersArea .teamMembersHeading {
     /* border: 2px solid black; */
     width: 100%;
     height: 20%;
@@ -444,6 +450,34 @@ footer .copy {
 }
 
 /*Responsive section*/
+
+@media (max-width: 1024px) {
+    .homeImg {
+        margin: 0;
+        width: 32rem;
+    }
+
+    section.hero .text {
+        font-size: 40px;
+    }
+
+    section.hero .hashtag {
+        font-size: 20px;
+    }
+
+    .headingStyle {
+        font-size: 34px;
+        line-height: 52px;
+    }
+    #About-Page>.aboutEle>#aboutImage>.imgContainer>img{
+        height: 49%;
+        margin-top: 6rem;
+    }
+    .lead{
+        margin-top: 2rem;
+    }
+}
+
 @media (max-width: 576px) {
 
     section.hero,
