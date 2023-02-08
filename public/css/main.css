@@ -427,6 +427,49 @@ section.hero .home-text {
 
 /* Carosuol part here */
 
+/* Blog area here */
+
+#blogPage{
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 98.5vw;
+}
+
+#blogPage > #blogArea{
+    height: 100%;
+    width: 100%;
+}
+
+#blogPage > #blogArea > #blogHeading{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+#blogPage > #blogArea > #blogHeading > .blogHeadingText{
+    font-size: 3rem;
+    font-weight: 600;
+    /* border: 2px solid green; */
+}
+
+#blogPage > #blogArea > #blogPostsArea{
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blogPage > #blogArea > #blogPostsArea > .blogPosts{
+    height: 90%;
+    width: 80%;
+    border: 2px solid brown;
+}
 
 /* Footer setion*/
 footer {
