@@ -19,6 +19,7 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /*Setup components*/
@@ -216,6 +217,10 @@ section.hero .home-text {
     width: 85%;
 }
 
+#joinUsOnPlatforms i {
+    font-size: 4rem;
+}
+
 #joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading {
     /* border: 2px solid black; */
     width: 100%;
@@ -326,7 +331,9 @@ section.hero .home-text {
 .UnderLineForTxt {
     border-bottom: 3px solid var(--gray-1);
     width: 18%;
-
+    margin-left: -0.4rem;
+    margin-top: -1.5rem !important;
+    width: 3%;
 }
 
 .container-fuild {
@@ -342,7 +349,7 @@ section.hero .home-text {
 
 /* Team Members page */
 #teamMembersPage {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 130vh;
     width: 98.5vw;
 }
@@ -371,6 +378,7 @@ section.hero .home-text {
 
 #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
     margin: 0 2rem;
+    width: 30%;
 }
 
 #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body {
@@ -379,6 +387,17 @@ section.hero .home-text {
     justify-content: center;
     align-items: center;
 }
+
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body>.card-link>i {
+    font-size: 2.5rem;
+    color: grey;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body>.card-link>i:hover {
+    color: #333333;
+}
+
 
 #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>img {
     height: 60%;
@@ -401,7 +420,7 @@ section.hero .home-text {
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
     width: 100%;
     height: 90%;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton {
@@ -426,7 +445,290 @@ section.hero .home-text {
     font-weight: 600;
 }
 
-/* Carosuol part here */
+/* Carosuol part in other file namely: carosuol.css */
+
+/* events area here */
+#eventPage {
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 98.5vw;
+}
+
+#eventPage>#eventArea {
+    height: 100%;
+    width: 100%;
+}
+
+#eventPage>#eventArea>#eventHeading {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+#eventPage>#eventArea>#eventContent {
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+#eventPage>#eventArea>#eventContent>#eventContentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5% 5%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+@media (max-width: 1024px) {
+    #eventPage>#eventArea>#eventContent>#eventContentContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 90%;
+    }
+}
+
+@media (max-width: 780px) {
+    .navbar .btn-outline-secondary{
+        height: 3.5rem;
+        width: 12rem;
+        padding: 9px 15px;
+        font-size: 16px;
+        margin: 3px 7px 8px 0;
+        font-weight: 200;
+        color: var(--primary-dark);
+    }
+
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar-nav{
+        margin: auto;
+        list-style: 1;
+        letter-spacing: 0.4rem;
+
+    }
+    #homePage .homeImg{
+        width: 27rem;
+    }
+    #About-Page{
+        height: 110vh;
+    }
+    #About-Page .headingStyle{
+        font-size: 22px;
+    }
+    #About-Page img{
+        height: 35% !important;
+    }
+    .UnderLineForTxt{
+        margin-top: -0.3rem !important;
+        width: 7%;
+    }
+    #joinUsOnPlatforms i {
+        font-size: 3rem;
+    }
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>a{
+        padding: 4px 13px;
+    }
+    #teamMembersPage>#teamMembersArea{
+        width: 100%;
+    }
+    #eventPage{
+        height: 115vh;
+    }
+    #eventPage .UnderLineForTxt{
+        width: 4%;
+        margin-top: -0.2rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .UnderLineForTxt {
+        margin-top: -0.5rem !important;
+        width: 6%;
+    }
+    
+    /* About Page */
+    #About-Page .headingStyle {
+        margin: 0 6vw;
+        width: 100vw;
+    }
+
+    #About-Page .UnderLineForTxt {
+        margin-left: 0rem !important;
+        width: 7% !important;
+    }
+
+    #About-Page p {
+        margin: 0 10vw;
+    }
+
+    #About-Page #aboutImage {
+        height: 0;
+        width: 0;
+    }
+
+    /* Join us on other platform */
+    #joinUsOnPlatforms {
+        height: 160vh;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading {
+        margin-top: 0;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 270%;
+        gap: 2%;
+    }
+
+    /* Benefit of joining us */
+    #benefitsOfJoiningUs {
+        margin-top: 228vh;
+    }
+
+    /* team members */
+    #teamMembersPage {
+        height: 440vh;
+    }
+
+    #teamMembersPage>#teamMembersArea .teamMembersHeading {
+        font-size: 2.5rem;
+        margin: 0rem 0 2rem 0;
+    }
+
+    #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
+        flex-direction: column;
+    }
+
+    #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
+        width: 85%;
+        margin-bottom: 3vh;
+    }
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul{
+        height: 36%;
+    }
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards{
+        margin-top: -23vh;
+    }
+
+    /* Blog area */
+    #blogPostsArea .carousel__slide figure {
+        height: 36vh;
+    }
+    /* event page */
+        #eventPage {
+            height: 200vh;
+            margin-top: -130vh;
+        }
+    
+        #eventPage>#eventArea>#eventContent>#eventContentContainer {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            height: 100%;
+            width: 70%;
+        }
+}
+
+
+#eventPage>#eventArea>#eventContent>#eventContentContainer>.eventGrid-item {
+    display: inline-grid;
+    height: 100%;
+    width: 100%;
+}
+
+#eventPage>#eventArea>#eventContent>#eventContentContainer>.eventContentContainerBlocks {
+    height: 80%;
+    width: 33%;
+    margin: 2rem;
+    /* border: 2px solid navy; */
+}
+
+#eventPage .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+#eventPage .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#eventPage .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+#eventPage .flip-card-front img {
+    border-radius: 10px;
+}
+
+/* Position the front and back side */
+#eventPage .flip-card-front,
+#eventPage .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    border-radius: 10px;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+#eventPage .flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+#eventPage .flip-card-front img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Style the back side */
+#eventPage .flip-card-back {
+    background-color: #f1f1f1;
+    color: var(--primary-dark);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Blog area here */
 
