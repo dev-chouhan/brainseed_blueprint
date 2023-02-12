@@ -150,6 +150,7 @@ section.hero .home-text {
     /* border: 2px solid black; */
     height: 90vh;
     width: 98.5vw;
+    margin-top: 50px;
 }
 
 #About-Page>.aboutEle {
