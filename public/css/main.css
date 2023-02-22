@@ -824,21 +824,71 @@ section.hero .home-text {
 
 
 
+/* Team page here */
+#joinTeamPage{
+    height: 100vh;
+    width: 98.5vw;
+    /* border: 2px solid black; */
+}
+
+#joinTeamPage > .container{
+    height: 100%;
+    width: 100%;
+}
+
+#joinTeamPage > .container > #joinTeamHeading{
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+
+#joinTeamPage > .container > #joinTeamHeading > .borderJoinTeamHeading{
+    height: 90%;
+    width: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 
+#joinTeamPage > .container > #joinTeamCards{
+    height: 80%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
 
+#joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard{
+    height: 100%;
+    width: 70%;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard .card{
+    margin: 2rem;
+    padding: 4rem;
+    width: 50%;
+    height: 85%;
+}
 
+#joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard > .card > .card-body > .card-title{
+    padding-bottom: 2rem;
+}
 
-
-
-
-
-
-
-
-
-
+#joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard > .card > .card-body > a{
+    margin-top: 2rem;
+    padding: 0.8rem 3rem;
+    border: none;
+}
 
 
 
@@ -902,6 +952,9 @@ footer .copy {
     }
     .lead {
         margin-top: 2rem;
+    }
+    #joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard{
+        width: 100%;
     }
 }
 
@@ -990,6 +1043,10 @@ footer .copy {
     #eventPage .UnderLineForTxt{
         width: 4%;
         margin-top: -0.2rem !important;
+    }
+    #joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard .card{
+        margin: 1rem;
+        padding: 2rem;
     }
 }
 
@@ -1111,6 +1168,17 @@ footer .copy {
         #blogPage>#blogArea{
             height: 110vh;
         }
+    /* join our team Page */
+    #joinTeamPage > .container > #joinTeamHeading > .borderJoinTeamHeading{
+        width: 100%;
+    }
+    #joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard{
+        width: 100%;
+        flex-direction: column;
+    }
+    #joinTeamPage > .container > #joinTeamCards > .borderJoinTeamCard .card{
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
