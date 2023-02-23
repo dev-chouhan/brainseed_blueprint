@@ -32,7 +32,6 @@ body {
     width: 3%;
 }
 
-
 .boldMe {
     font-weight: 400;
     font-size: 63px;
@@ -344,8 +343,39 @@ section.hero .home-text {
 /* Benefits of joinig Us */
 #benefitsOfJoiningUs {
     border: 2px solid black;
-    height: 100vh;
-    width: 98.5vw;
+    height: 50%;
+    width: 100%;
+}
+
+.text1 {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 73px;
+    color: var(--primary);
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    
+}
+.text2 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: black;
+    
+}
+.benifitcont{
+    margin-right: 37%;
+}
+.benbenifitImage{
+    align-items: flex-start;
+    display: flex;
+    
+}
+#benefitsOfJoiningUs>.container>#benifitImage>.imgContainer1>img {
+    height: 36%;
+    width: 36%;
+    margin-top: -37%;
+    margin-left: 65%;
 }
 
 /* Team Members page */
