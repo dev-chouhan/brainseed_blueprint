@@ -1,1219 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BrainSeed Networks</title>
-    <link
-      rel="shortcut icon"
-      href="assets/img/brand/favicon.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/img/brand/favicon.svg" type="image/x-icon" />
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- ===== Link Swiper's CSS ===== -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- ===== Fontawesome CDN Link ===== -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/dfebc2aeb7.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <script src="https://kit.fontawesome.com/dfebc2aeb7.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
     <!--! Navbar section **Start-->
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <!-- Brand here -->
-          <img
-            class=""
-            style="height: 6rem; width: 9rem"
-            src="./images/logo.png"
-            alt="hero-img"
-            class="mw-50"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#homePage"
-              >Home</a
-            >
-            <a class="nav-link" href="#About-Page">About</a>
-            <a class="nav-link" href="#teamMembersPage">Team</a>
-            <a class="nav-link" href="#eventPage">Events</a>
-            <a class="nav-link" href="#blogPage">Blogs</a>
-          </div>
-          <a
-            href="#"
-            class="btn btn-outline-secondary shadow-sm d-sm d-block ms-4"
-            >Contact Us</a
-          >
-          <div class="dropdown ms-3">
-            <a
-              class="btn btn-primary dropdown-toggle joinNavBtn"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Join Us
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Brand here -->
+                <img class="" style="height: 6rem; width: 9rem" src="./images/logo.png" alt="hero-img" class="mw-50" />
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Core Team</a></li>
-              <li><a class="dropdown-item" href="#">Volunteer Team</a></li>
-              <li><a class="dropdown-item" href="#">Collaborations</a></li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#homePage">Home</a>
+                    <a class="nav-link" href="#About-Page">About</a>
+                    <a class="nav-link" href="#teamMembersPage">Team</a>
+                    <a class="nav-link" href="#eventPage">Events</a>
+                    <a class="nav-link" href="#blogPage">Blogs</a>
+                </div>
+                <a href="#" class="btn btn-outline-secondary shadow-sm d-sm d-block ms-4">Contact Us</a>
+                <div class="dropdown ms-3">
+                    <a class="btn btn-primary dropdown-toggle joinNavBtn" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Join Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Core Team</a></li>
+                        <li><a class="dropdown-item" href="#">Volunteer Team</a></li>
+                        <li><a class="dropdown-item" href="#">Collaborations</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
     <!--! Navbar section **ends-->
 
-    <div
-      data-bs-spy="scroll"
-      data-bs-target="#navbar-example2"
-      data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true"
-      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
-      tabindex="0"
-    >
-      <!--! Hero/Home section **starts-->
-      <section class="hero" id="homePage">
-        <div class="container">
-          <div class="row">
-            <!-- Text -->
-            <div class="col-md-6">
-              <div class="text">BrainSeed Networks Community!</div>
-              <div class="hashtag">#BuildingSuccessTogether</div>
-              <p class="home-text">
-                "Empowering tech enthusiasts, one seed at a time". At BrainSeed
-                Networks, Our community is dedicated to empowering tech
-                enthusiasts and fostering a love for technology.
-              </p>
-              <div class="buttons">
-                <a href="#" class="btn btn-primary" style="border: none"
-                  ><i class="icon fas fa-rocket"></i>
-                  <span class="ms-2">Contact Us</span></a
-                >
-                <a href="#" class="btn btn-outline-secondary ms-3"
-                  ><i class="icon fas fa-handshake"></i
-                  ><span class="ms-2"> Join Us</span></a
-                >
-              </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <!--! Hero/Home section **starts-->
+        <section class="hero" id="homePage">
+            <div class="container">
+                <div class="row">
+                    <!-- Text -->
+                    <div class="col-md-6">
+                        <div class="text">BrainSeed Networks Community!</div>
+                        <div class="hashtag">#BuildingSuccessTogether</div>
+                        <p class="home-text">
+                            "Empowering tech enthusiasts, one seed at a time". At BrainSeed
+                            Networks, Our community is dedicated to empowering tech
+                            enthusiasts and fostering a love for technology.
+                        </p>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary" style="border: none"><i class="icon fas fa-rocket"></i>
+                                <span class="ms-2">Contact Us</span></a>
+                            <a href="#" class="btn btn-outline-secondary ms-3"><i
+                                    class="icon fas fa-handshake"></i><span class="ms-2"> Join Us</span></a>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-md-6 homeImg">
+                        <img src=".\images\home-img.png" alt="hero-img" class="w-100" />
+                    </div>
+                </div>
             </div>
-            <!-- Image -->
-            <div class="col-md-6 homeImg">
-              <img src=".\images\home-img.png" alt="hero-img" class="w-100" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--! Hero/Home section **ends-->
+        </section>
+        <!--! Hero/Home section **ends-->
 
-      <!--! About Page **start -->
-      <section class="container-fluid" id="About-Page">
-        <div class="aboutEle">
-          <div id="aboutText">
-            <div class="jumbotron mx-5">
-              <div
-                style="
+        <!--! About Page **start -->
+        <section class="container-fluid" id="About-Page">
+            <div class="aboutEle">
+                <div id="aboutText">
+                    <div class="jumbotron mx-5">
+                        <div style="
                   display: flex;
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
-                "
-                class="about-heading"
-              >
-                <h1 class="display-4 headingStyle">
-                  <span class="boldMe incrSizeOnMoblie">W</span>ho we are and
-                  <span class="rightShiftOnMobile"
-                    ><span class="boldMe disapearMeOnMoblie">W</span>hat we do
-                    ?</span
-                  >
-                </h1>
-                <div class="UnderLineForTxt" style="margin-left: -5rem"></div>
-              </div>
-              <br /><br />
-              <p class="lead">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates animi optio, sint aliquid sequi, unde fugit nulla
-                similique reiciendis, quisquam quos. Omnis consequuntur
-                inventore beatae nostrum nobis quae adipisci porro odio, veniam
-                quisquam. Laudantium eos explicabo, sapiente soluta, voluptas
-                officia aut odit autem sunt atque vel iste sequi consectetur?
-                Hic non delectus harum repellat debitis libero rerum sapiente in
-                sunt maxime voluptatibus nulla qui aperiam perspiciatis nemo,
-                possimus quibusdam! Quod quia perspiciatis accusantium iure
-                autem modi aut aliquid aspernatur. Itaque.
-              </p>
-              <hr class="my-4" />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-                inventore obcaecati laudantium minus et at, maiores aut commodi
-                tempora, quas, quam ad autem? Maxime, vitae vero porro
-                accusantium perspiciatis alias!
-              </p>
-              <p class="lead">
-                <a
-                  class="btn btn-primary btn-lg my-4"
-                  style="font-size: 18px; font-weight: 500; border: none"
-                  href="#"
-                  role="button"
-                  >Learn more</a
-                >
-              </p>
+                " class="about-heading">
+                            <h1 class="display-4 headingStyle">
+                                <span class="boldMe incrSizeOnMoblie">W</span>ho we are and
+                                <span class="rightShiftOnMobile"><span class="boldMe disapearMeOnMoblie">W</span>hat we
+                                    do
+                                    ?</span>
+                            </h1>
+                            <div class="UnderLineForTxt" style="margin-left: -5rem"></div>
+                        </div>
+                        <br /><br />
+                        <p class="lead">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptates animi optio, sint aliquid sequi, unde fugit nulla
+                            similique reiciendis, quisquam quos. Omnis consequuntur
+                            inventore beatae nostrum nobis quae adipisci porro odio, veniam
+                            quisquam. Laudantium eos explicabo, sapiente soluta, voluptas
+                            officia aut odit autem sunt atque vel iste sequi consectetur?
+                            Hic non delectus harum repellat debitis libero rerum sapiente in
+                            sunt maxime voluptatibus nulla qui aperiam perspiciatis nemo,
+                            possimus quibusdam! Quod quia perspiciatis accusantium iure
+                            autem modi aut aliquid aspernatur. Itaque.
+                        </p>
+                        <hr class="my-4" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+                            inventore obcaecati laudantium minus et at, maiores aut commodi
+                            tempora, quas, quam ad autem? Maxime, vitae vero porro
+                            accusantium perspiciatis alias!
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg my-4"
+                                style="font-size: 18px; font-weight: 500; border: none" href="#" role="button">Learn
+                                more</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="aboutImage">
+                    <div class="imgContainer">
+                        <img src="./images/aboutImg3.png" alt="About Img" />
+                    </div>
+                </div>
             </div>
-          </div>
-          <div id="aboutImage">
-            <div class="imgContainer">
-              <img src="./images/aboutImg3.png" alt="About Img" />
+        </section>
+        <!--! About page **end -->
+
+        <!-- ! Join us on other platforms **start-->
+        <section class="container-fuild" id="joinUsOnPlatforms">
+            <div id="joinPlatforms">
+                <div class="joinPlatformHeading">
+                    <h1 class="display-4 headingStyle">
+                        <span class="boldMe" style="font-size: 45px">J</span>oin Us
+                        <span class="boldMe" style="font-size: 45px">H</span>ere...
+                    </h1>
+                    <div class="UnderLineForTxt my-2" style="margin-left: -2rem"></div>
+                </div>
+                <div id="joinPlatformsDetail" class="my-5">
+                    <div class="my-4"></div>
+                    <div class="containerJoinPlatforms">
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp1">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    <h5 class="card-title">YouTube Content</h5>
+                                    <p class="card-text my-4">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa
+                                        quam! Nostrum, vel ea?
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp2">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <h5 class="card-title">Facebook</h5>
+                                    <p class="card-text my-4">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa
+                                        quam! Nostrum, vel ea?
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp3">
+                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                    <h5 class="card-title">Telegram Group</h5>
+                                    <p class="card-text my-4">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa
+                                        quam! Nostrum, vel ea?
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp4">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    <h5 class="card-title">LinkedIN Page</h5>
+                                    <p class="card-text my-4">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa
+                                        quam! Nostrum, vel ea?
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp5">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                                    <h5 class="card-title">Open Source Projects</h5>
+                                    <p class="card-text my-4">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa
+                                        quam! Nostrum, vel ea?
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridItemForJoinPlatform">
+                            <div class="card text-center mb-3">
+                                <div class="card-body jp6">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    <h5 class="card-title">Whatsapp</h5>
+                                    <p class="card-text my-4">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Commodi suscipit maxime unde, quos laudantium debitis ipsa
+                                        quam! Nostrum, vel ea?
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4"></div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--! About page **end -->
+        </section>
+        <!-- ! Join us on other platforms **ends-->
 
-      <!-- ! Join us on other platforms **start-->
-      <section class="container-fuild" id="joinUsOnPlatforms">
-        <div id="joinPlatforms">
-          <div class="joinPlatformHeading">
-            <h1 class="display-4 headingStyle">
-              <span class="boldMe" style="font-size: 45px">J</span>oin Us
-              <span class="boldMe" style="font-size: 45px">H</span>ere...
-            </h1>
-            <div class="UnderLineForTxt my-2" style="margin-left: -2rem"></div>
-          </div>
-          <div id="joinPlatformsDetail" class="my-5">
-            <div class="my-4"></div>
-            <div class="containerJoinPlatforms">
-              <div class="gridItemForJoinPlatform">
-                <div class="card text-center mb-3">
-                  <div class="card-body jp1">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    <h5 class="card-title">YouTube Content</h5>
-                    <p class="card-text my-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Commodi suscipit maxime unde, quos laudantium debitis ipsa
-                      quam! Nostrum, vel ea?
-                    </p>
-                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
-                  </div>
+        <!-- ! Benefits of joining us **starts -->
+        <section class="fuild-container" id="benefitsOfJoiningUs"></section>
+        <!-- ! Benefits of joining us **ends -->
+
+        <!-- ! Team Page **starts -->
+        <section class="container-fuild" id="teamMembersPage">
+            <div id="teamMembersArea">
+                <div id="founderTeam">
+                    <div class="teamMembersHeading">Founding Members</div>
+                    <div class="founderMembersCards">
+                        <!-- Edit founders card here -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/300x300/?perth,australia" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Founder</p>
+                            </div>
+                            <div class="card-body" style="flex-direction: row">
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/300x300/?fremantle,australia" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Founder</p>
+                            </div>
+                            <div class="card-body" style="flex-direction: row">
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://source.unsplash.com/300x300/?perth" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Founder</p>
+                            </div>
+                            <div class="card-body" style="flex-direction: row">
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="card-link"><i class="fa fa-linkedin-square"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="gridItemForJoinPlatform">
-                <div class="card text-center mb-3">
-                  <div class="card-body jp2">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                    <h5 class="card-title">Facebook</h5>
-                    <p class="card-text my-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Commodi suscipit maxime unde, quos laudantium debitis ipsa
-                      quam! Nostrum, vel ea?
-                    </p>
-                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
-                  </div>
+                <div id="coreTeam">
+                    <div class="teamMembersHeading">Core Members</div>
+                    <div class="CoreMembersCards">
+                        <!-- Edit core members detail from here -->
+                        <div id="coreMembersCarosoul"></div>
+                        <div id="coreMemberButton">
+                            <form action="/coremem" method="get">
+                                <button class="btn btn-outline-dark" type="submit">
+                                    View All
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="gridItemForJoinPlatform">
-                <div class="card text-center mb-3">
-                  <div class="card-body jp3">
-                    <i class="fa fa-telegram" aria-hidden="true"></i>
-                    <h5 class="card-title">Telegram Group</h5>
-                    <p class="card-text my-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Commodi suscipit maxime unde, quos laudantium debitis ipsa
-                      quam! Nostrum, vel ea?
-                    </p>
-                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
-                  </div>
-                </div>
-              </div>
-              <div class="gridItemForJoinPlatform">
-                <div class="card text-center mb-3">
-                  <div class="card-body jp4">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <h5 class="card-title">LinkedIN Page</h5>
-                    <p class="card-text my-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Commodi suscipit maxime unde, quos laudantium debitis ipsa
-                      quam! Nostrum, vel ea?
-                    </p>
-                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
-                  </div>
-                </div>
-              </div>
-              <div class="gridItemForJoinPlatform">
-                <div class="card text-center mb-3">
-                  <div class="card-body jp5">
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
-                    <h5 class="card-title">Open Source Projects</h5>
-                    <p class="card-text my-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Commodi suscipit maxime unde, quos laudantium debitis ipsa
-                      quam! Nostrum, vel ea?
-                    </p>
-                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
-                  </div>
-                </div>
-              </div>
-              <div class="gridItemForJoinPlatform">
-                <div class="card text-center mb-3">
-                  <div class="card-body jp6">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    <h5 class="card-title">Whatsapp</h5>
-                    <p class="card-text my-4">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Commodi suscipit maxime unde, quos laudantium debitis ipsa
-                      quam! Nostrum, vel ea?
-                    </p>
-                    <a href="#" class="btn btn-outline-dark">Visit Us</a>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="my-4"></div>
-          </div>
-        </div>
-      </section>
-      <!-- ! Join us on other platforms **ends-->
+        </section>
+        <!-- ! Team page **ends -->
 
-      <!-- ! Benefits of joining us **starts -->
-      <section class="fuild-container" id="benefitsOfJoiningUs"></section>
-      <!-- ! Benefits of joining us **ends -->
+        <!-- ! Events page **starts -->
 
-      <!-- ! Team Page **starts -->
-      <section class="container-fuild" id="teamMembersPage">
-        <div id="teamMembersArea">
-          <div id="founderTeam">
-            <div class="teamMembersHeading">Founding Members</div>
-            <div class="founderMembersCards">
-              <!-- Edit founders card here -->
-              <div class="card">
-                <img
-                  src="https://source.unsplash.com/300x300/?perth,australia"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Founder</p>
+        <section class="fluid-container" id="eventPage">
+            <div id="eventArea">
+                <div id="eventHeading">
+                    <h1 class="display-4 headingStyle" style="font-size: 34px">
+                        <span class="boldMe" style="font-size: 45px">E</span>vents
+                        <span class="boldMe" style="font-size: 45px">H</span>ere
+                    </h1>
+                    <div class="UnderLineForTxt my-2"></div>
                 </div>
-                <div class="card-body" style="flex-direction: row">
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://source.unsplash.com/300x300/?fremantle,australia"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Founder</p>
-                </div>
-                <div class="card-body" style="flex-direction: row">
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="card">
-                <img
-                  src="https://source.unsplash.com/300x300/?perth"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Founder</p>
-                </div>
-                <div class="card-body" style="flex-direction: row">
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="card-link"
-                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="coreTeam">
-            <div class="teamMembersHeading">Core Members</div>
-            <div class="CoreMembersCards">
-              <!-- Edit core members detail from here -->
-              <div id="coreMembersCarosoul"></div>
-              <div id="coreMemberButton">
-                <form action="/coremem" method="get">
-                  <button class="btn btn-outline-dark" type="submit">
-                    View All
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ! Team page **ends -->
+                <div id="eventContent">
+                    <div id="eventContentContainer">
+                        <div class="eventGrid-item">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                            alt="Avatar" />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>John Doe</h1>
+                                        <p>Architect & Engineer</p>
+                                        <p>We love that guy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-      <!-- ! Events page **starts -->
+                        <div class="eventGrid-item">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                            alt="Avatar" />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>John Doe</h1>
+                                        <p>Architect & Engineer</p>
+                                        <p>We love that guy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-      <section class="fluid-container" id="eventPage">
-        <div id="eventArea">
-          <div id="eventHeading">
-            <h1 class="display-4 headingStyle" style="font-size: 34px">
-              <span class="boldMe" style="font-size: 45px">E</span>vents
-              <span class="boldMe" style="font-size: 45px">H</span>ere
-            </h1>
-            <div class="UnderLineForTxt my-2"></div>
-          </div>
-          <div id="eventContent">
-            <div id="eventContentContainer">
-              <div class="eventGrid-item">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img
-                        src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                        alt="Avatar"
-                      />
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <div class="eventGrid-item">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                            alt="Avatar" />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>John Doe</h1>
+                                        <p>Architect & Engineer</p>
+                                        <p>We love that guy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-              <div class="eventGrid-item">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img
-                        src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                        alt="Avatar"
-                      />
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <div class="eventGrid-item">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                            alt="Avatar" />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>John Doe</h1>
+                                        <p>Architect & Engineer</p>
+                                        <p>We love that guy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-              <div class="eventGrid-item">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img
-                        src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                        alt="Avatar"
-                      />
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <div class="eventGrid-item">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                            alt="Avatar" />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>John Doe</h1>
+                                        <p>Architect & Engineer</p>
+                                        <p>We love that guy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-              <div class="eventGrid-item">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img
-                        src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                        alt="Avatar"
-                      />
+                        <div class="eventGrid-item">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                                            alt="Avatar" />
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>John Doe</h1>
+                                        <p>Architect & Engineer</p>
+                                        <p>We love that guy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventGrid-item">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img
-                        src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                        alt="Avatar"
-                      />
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventGrid-item">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <img
-                        src="https://th.bing.com/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-                        alt="Avatar"
-                      />
-                    </div>
-                    <div class="flip-card-back">
-                      <h1>John Doe</h1>
-                      <p>Architect & Engineer</p>
-                      <p>We love that guy</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="eventContentButton">
-              <form action="/coremem" method="get">
-                <button
-                  class="btn btn-outline-dark"
-                  type="submit"
-                  style="
+                    <div id="eventContentButton">
+                        <form action="/coremem" method="get">
+                            <button class="btn btn-outline-dark" type="submit" style="
                     margin-top: 2rem;
                     font-size: 1.3rem;
                     font-weight: 300;
                     padding: 1rem 5rem;
-                  "
-                >
-                  View Upcoming Events
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ! Events page **ends -->
-
-      <!-- ! Blog page **starts -->
-      <section class="fuild-container" id="blogPage">
-        <div id="blogArea">
-          <div id="blogHeading">
-            <h1 class="display-4 headingStyle" style="font-size: 34px">
-              <span class="boldMe" style="font-size: 45px">B</span>logs
-              <span class="boldMe" style="font-size: 45px">H</span>ere
-            </h1>
-            <div class="UnderLineForTxt my-2"></div>
-          </div>
-          <div id="blogPostsArea">
-            <div class="blogPosts">
-              <!-- blog caurosul ends here -->
-              <div class="carousel">
-                <input
-                  type="radio"
-                  name="slides"
-                  checked="checked"
-                  id="slide-1"
-                />
-                <input type="radio" name="slides" id="slide-2" />
-                <input type="radio" name="slides" id="slide-3" />
-                <input type="radio" name="slides" id="slide-4" />
-                <input type="radio" name="slides" id="slide-5" />
-                <input type="radio" name="slides" id="slide-6" />
-                <ul class="carousel__slides">
-                  <li class="carousel__slide">
-                    <figure>
-                      <div>
-                        <img
-                          src="https://picsum.photos/id/1041/800/450"
-                          alt=""
-                        />
-                      </div>
-                      <figcaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <span class="credit">Photo: Tim Marshall</span>
-                        <div class="blogDetail" style="margin: 0 50%">
-                          <a href="#" style="text-decoration: none">See More</a>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="carousel__slide">
-                    <figure>
-                      <div>
-                        <img
-                          src="https://picsum.photos/id/1043/800/450"
-                          alt=""
-                        />
-                      </div>
-                      <figcaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <span class="credit">Photo: Christian Joudrey</span>
-                        <div class="blogDetail" style="margin: 0 50%">
-                          <a href="#" style="text-decoration: none">See More</a>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="carousel__slide">
-                    <figure>
-                      <div>
-                        <img
-                          src="https://picsum.photos/id/1044/800/450"
-                          alt=""
-                        />
-                      </div>
-                      <figcaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <span class="credit">Photo: Steve Carter</span>
-                        <div class="blogDetail" style="margin: 0 50%">
-                          <a href="#" style="text-decoration: none">See More</a>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="carousel__slide">
-                    <figure>
-                      <div>
-                        <img
-                          src="https://picsum.photos/id/1045/800/450"
-                          alt=""
-                        />
-                      </div>
-                      <figcaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <span class="credit"
-                          >Photo: Aleksandra Boguslawska</span
-                        >
-                        <div class="blogDetail" style="margin: 0 50%">
-                          <a href="#" style="text-decoration: none">See More</a>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="carousel__slide">
-                    <figure>
-                      <div>
-                        <img
-                          src="https://picsum.photos/id/1049/800/450"
-                          alt=""
-                        />
-                      </div>
-                      <figcaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <span class="credit">Photo: Rosan Harmens</span>
-                        <div class="blogDetail" style="margin: 0 50%">
-                          <a href="#" style="text-decoration: none">See More</a>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                  <li class="carousel__slide">
-                    <figure>
-                      <div>
-                        <img
-                          src="https://picsum.photos/id/1052/800/450"
-                          alt=""
-                        />
-                      </div>
-                      <figcaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        <span class="credit">Photo: Annie Spratt</span>
-                        <div class="blogDetail" style="margin: 0 50%">
-                          <a href="#" style="text-decoration: none">See More</a>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                </ul>
-                <ul class="carousel__thumbnails">
-                  <!--ToDo: Add carousel here for thumbnails -->
-                  <li>
-                    <label for="slide-1"
-                      ><img src="https://picsum.photos/id/1041/150/150" alt=""
-                    /></label>
-                  </li>
-                  <li>
-                    <label for="slide-2"
-                      ><img src="https://picsum.photos/id/1043/150/150" alt=""
-                    /></label>
-                  </li>
-                  <li>
-                    <label for="slide-3"
-                      ><img src="https://picsum.photos/id/1044/150/150" alt=""
-                    /></label>
-                  </li>
-                  <li>
-                    <label for="slide-4"
-                      ><img src="https://picsum.photos/id/1045/150/150" alt=""
-                    /></label>
-                  </li>
-                  <li>
-                    <label for="slide-5"
-                      ><img src="https://picsum.photos/id/1049/150/150" alt=""
-                    /></label>
-                  </li>
-                  <li>
-                    <label for="slide-6"
-                      ><img src="https://picsum.photos/id/1052/150/150" alt=""
-                    /></label>
-                  </li>
-                </ul>
-              </div>
-              <!-- blog caurosul ends here -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ! Blog page **ends -->
-
-      <!-- ! Join team **starts -->
-
-      <section class="fluid-container" id="joinTeamPage">
-        <div class="container">
-          <div id="joinTeamHeading">
-            <div class="borderJoinTeamHeading">
-              <h1 class="display-4 headingStyle">
-                <span class="boldMe" style="font-size: 50px">J</span>oin Us
-                <span class="boldMe" style="font-size: 50px">H</span>ere
-              </h1>
-              <div class="UnderLineForTxt my-2"></div>
-            </div>
-          </div>
-          <div id="joinTeamCards">
-            <div class="borderJoinTeamCard">
-              <div class="card text-center mb-3">
-                <div class="card-body">
-                  <h1 class="card-title">Join Core Team</h1>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Nemo recusandae corrupti nulla at, in
-                    rerum ipsa dignissimos nobis omnis ab. Laborum possimus
-                    officiis quam nisi harum dolore odit tempora velit hic,
-                    perspiciatis, officia molestias a nulla iure sit quae
-                    obcaecati? Maiores modi placeat odio explicabo, ad fugit
-                    quas vero non.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  ">
+                                View Upcoming Events
+                            </button>
+                        </form>
+                    </div>
                 </div>
-              </div>
-              <div class="card text-center mb-3">
-                <div class="card-body">
-                  <h1 class="card-title">Join Volunteer Team</h1>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Aliquid rem aspernatur voluptatum repellat
-                    laborum tenetur, quia distinctio, temporibus optio
-                    exercitationem sed, dolores qui molestiae nisi debitis.
-                    Impedit optio aperiam esse culpa et asperiores quidem quod
-                    numquam. Officiis nobis veniam fugiat recusandae assumenda
-                    sapiente possimus voluptates, velit cumque accusamus maxime
-                    distinctio.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ! Join team **ends -->
-
-      <!-- ! Show Off Page **starts -->
-
-      <section class="fluid-container" id="showoffPage">
-        <section id="showOffPage1">
-          <div class="communityPastAcheivementsBorder">
-            <div class="acheiventsBlockBorder">
-              <div class="acheiventsBlocks">
-                <div class="acheiventsIcon acheivementsElements">
-                  <i class="icon fas fa-rocket"></i>
-                </div>
-                <span class="acheiventsCount acheivementsElements">
-                  <div id="membersCount">500</div>
-                  +
-                </span>
-                <div class="acheiventsText acheivementsElements">
-                  Community Members
-                </div>
-              </div>
-            </div>
-            <div class="acheiventsBlockBorder">
-              <div class="acheiventsBlocks">
-                <div class="acheiventsIcon acheivementsElements">
-                  <i class="icon fas fa-rocket"></i>
-                </div>
-                <span class="acheiventsCount acheivementsElements">
-                  <div id="eventsCount">250</div>
-                  +
-                </span>
-                <div class="acheiventsText acheivementsElements">Events</div>
-              </div>
-            </div>
-            <div class="acheiventsBlockBorder">
-              <div class="acheiventsBlocks">
-                <div class="acheiventsIcon acheivementsElements">
-                  <i class="icon fas fa-rocket"></i>
-                </div>
-                <span class="acheiventsCount acheivementsElements">
-                  <div id="opporCount">200</div>
-                  +
-                </span>
-                <div class="acheiventsText acheivementsElements">
-                  Opportunities provided
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
-        <!-- sponsers page -->
-        <section id="showOffPage2">
-          <div class="ourSponsers">
-            <div id="sponserHeading">
-              <h1 class="display-4 headingStyle" style="font-size: 34px">
-                <span class="boldMe" style="font-size: 45px">O</span>ur
-                <span class="boldMe" style="font-size: 45px">S</span>ponsers
-              </h1>
-              <div class="UnderLineForTxt my-2"></div>
-            </div>
-            <div id="sponsersLogoArea">
-              <div class="slider">
-                <div class="slide-track">
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
-                  <div class="slide">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-                      height="100"
-                      width="250"
-                      alt=""
-                    />
-                  </div>
+
+        <!-- ! Events page **ends -->
+
+        <!-- ! Blog page **starts -->
+        <section class="fuild-container" id="blogPage">
+            <div id="blogArea">
+                <div id="blogHeading">
+                    <h1 class="display-4 headingStyle" style="font-size: 34px">
+                        <span class="boldMe" style="font-size: 45px">B</span>logs
+                        <span class="boldMe" style="font-size: 45px">H</span>ere
+                    </h1>
+                    <div class="UnderLineForTxt my-2"></div>
                 </div>
-              </div>
+                <div id="blogPostsArea">
+                    <div class="blogPosts">
+                        <!-- blog caurosul ends here -->
+                        <div class="carousel">
+                            <input type="radio" name="slides" checked="checked" id="slide-1" />
+                            <input type="radio" name="slides" id="slide-2" />
+                            <input type="radio" name="slides" id="slide-3" />
+                            <input type="radio" name="slides" id="slide-4" />
+                            <input type="radio" name="slides" id="slide-5" />
+                            <input type="radio" name="slides" id="slide-6" />
+                            <ul class="carousel__slides">
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1041/800/450" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Tim Marshall</span>
+                                            <div class="blogDetail" style="margin: 0 50%">
+                                                <a href="#" style="text-decoration: none">See More</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1043/800/450" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Christian Joudrey</span>
+                                            <div class="blogDetail" style="margin: 0 50%">
+                                                <a href="#" style="text-decoration: none">See More</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1044/800/450" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Steve Carter</span>
+                                            <div class="blogDetail" style="margin: 0 50%">
+                                                <a href="#" style="text-decoration: none">See More</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1045/800/450" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Aleksandra Boguslawska</span>
+                                            <div class="blogDetail" style="margin: 0 50%">
+                                                <a href="#" style="text-decoration: none">See More</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1049/800/450" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Rosan Harmens</span>
+                                            <div class="blogDetail" style="margin: 0 50%">
+                                                <a href="#" style="text-decoration: none">See More</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1052/800/450" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Annie Spratt</span>
+                                            <div class="blogDetail" style="margin: 0 50%">
+                                                <a href="#" style="text-decoration: none">See More</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <ul class="carousel__thumbnails">
+                                <!--ToDo: Add carousel here for thumbnails -->
+                                <li>
+                                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150"
+                                            alt="" /></label>
+                                </li>
+                                <li>
+                                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150"
+                                            alt="" /></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150"
+                                            alt="" /></label>
+                                </li>
+                                <li>
+                                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150"
+                                            alt="" /></label>
+                                </li>
+                                <li>
+                                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150"
+                                            alt="" /></label>
+                                </li>
+                                <li>
+                                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150"
+                                            alt="" /></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- blog caurosul ends here -->
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
-      </section>
 
-      <!-- ! Show Off Page **ends -->
+        <!-- ! Blog page **ends -->
 
-      <!-- ! FAQ Page **starts -->
+        <!-- ! Join team **starts -->
 
-      <section class="fluid-container" id="faqPage">
-        <div id="faqPageInline">
-          <div id="faqHeading">
-            <h1 class="display-4 headingStyle" style="font-size: 34px">
-              <span class="boldMe" style="font-size: 45px">FAQ</span>'s
-            </h1>
-            <div class="UnderLineForTxt my-2"></div>
-          </div>
-          <div id="faqContent">
-            <div class="faqElements">
-              <div class="faqEle faqEle1">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        Question 1: Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Debitis, vel.
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the first item's accordion body.</strong
-                        >
-                        It is shown by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes contr.
-                      </div>
+        <section class="fluid-container" id="joinTeamPage">
+            <div class="container">
+                <div id="joinTeamHeading">
+                    <div class="borderJoinTeamHeading">
+                        <h1 class="display-4 headingStyle">
+                            <span class="boldMe" style="font-size: 50px">J</span>oin Us
+                            <span class="boldMe" style="font-size: 50px">H</span>ere
+                        </h1>
+                        <div class="UnderLineForTxt my-2"></div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        Question 2: Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Debitis, vel.
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the second item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or
-                        overriding.
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="faqEle faqEle2">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
-                      >
-                        Question 3: Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Debitis, vel.
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the second item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
+                <div id="joinTeamCards">
+                    <div class="borderJoinTeamCard">
+                        <div class="card text-center mb-3">
+                            <div class="card-body">
+                                <h1 class="card-title">Join Core Team</h1>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to
+                                    additional content. Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nemo recusandae corrupti nulla at, in
+                                    rerum ipsa dignissimos nobis omnis ab. Laborum possimus
+                                    officiis quam nisi harum dolore odit tempora velit hic,
+                                    perspiciatis, officia molestias a nulla iure sit quae
+                                    obcaecati? Maiores modi placeat odio explicabo, ad fugit
+                                    quas vero non.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card text-center mb-3">
+                            <div class="card-body">
+                                <h1 class="card-title">Join Volunteer Team</h1>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to
+                                    additional content. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Aliquid rem aspernatur voluptatum repellat
+                                    laborum tenetur, quia distinctio, temporibus optio
+                                    exercitationem sed, dolores qui molestiae nisi debitis.
+                                    Impedit optio aperiam esse culpa et asperiores quidem quod
+                                    numquam. Officiis nobis veniam fugiat recusandae assumenda
+                                    sapiente possimus voluptates, velit cumque accusamus maxime
+                                    distinctio.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour"
-                      >
-                        Question 4: Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Debitis, vel.
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingFour"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the second item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- ! FAQ Page **ends -->
+        </section>
 
-      <!-- ! Contact Us Page **starts -->
+        <!-- ! Join team **ends -->
 
-      <section class="fluid-container" id="contactUs">
-        <div id="contactSectionText">
-          <div id="contactUsHeading">
-            <h1 class="display-4 headingStyle">
-              <span class="boldMe" style="font-size: 45px">C</span>ontact
-              <span class="boldMe" style="font-size: 45px">U</span>s
-            </h1>
-            <div class="UnderLineForTxt my-2"></div>
-          </div>
-          <div id="contactUsForm">
-            <div class="contactUsFormDetail">
-              <!-- Form Creation -->
-              <form action="/" method="post">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Your Name
-                    <span style="font-weight: 200; color: gray"
-                      >(required)</span
-                    >
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    required
-                  />
+        <!-- ! Show Off Page **starts -->
+
+        <section class="fluid-container" id="showoffPage">
+            <section id="showOffPage1">
+                <div class="communityPastAcheivementsBorder">
+                    <div class="acheiventsBlockBorder">
+                        <div class="acheiventsBlocks">
+                            <div class="acheiventsIcon acheivementsElements">
+                                <i class="icon fas fa-rocket"></i>
+                            </div>
+                            <span class="acheiventsCount acheivementsElements">
+                                <div id="membersCount">500</div>
+                                +
+                            </span>
+                            <div class="acheiventsText acheivementsElements">
+                                Community Members
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acheiventsBlockBorder">
+                        <div class="acheiventsBlocks">
+                            <div class="acheiventsIcon acheivementsElements">
+                                <i class="icon fas fa-rocket"></i>
+                            </div>
+                            <span class="acheiventsCount acheivementsElements">
+                                <div id="eventsCount">250</div>
+                                +
+                            </span>
+                            <div class="acheiventsText acheivementsElements">Events</div>
+                        </div>
+                    </div>
+                    <div class="acheiventsBlockBorder">
+                        <div class="acheiventsBlocks">
+                            <div class="acheiventsIcon acheivementsElements">
+                                <i class="icon fas fa-rocket"></i>
+                            </div>
+                            <span class="acheiventsCount acheivementsElements">
+                                <div id="opporCount">200</div>
+                                +
+                            </span>
+                            <div class="acheiventsText acheivementsElements">
+                                Opportunities provided
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address
-                    <span style="font-weight: 200; color: gray"
-                      >(required)</span
-                    >
-                  </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    required
-                  />
-                  <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
+            </section>
+            <!-- sponsers page -->
+            <section id="showOffPage2">
+                <div class="ourSponsers">
+                    <div id="sponserHeading">
+                        <h1 class="display-4 headingStyle" style="font-size: 34px">
+                            <span class="boldMe" style="font-size: 45px">O</span>ur
+                            <span class="boldMe" style="font-size: 45px">S</span>ponsers
+                        </h1>
+                        <div class="UnderLineForTxt my-2"></div>
+                    </div>
+                    <div id="sponsersLogoArea">
+                        <div class="slider">
+                            <div class="slide-track">
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
+                                        width="250" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Subject</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
+            </section>
+        </section>
+
+        <!-- ! Show Off Page **ends -->
+
+        <!-- ! FAQ Page **starts -->
+
+        <section class="fluid-container" id="faqPage">
+            <div id="faqPageInline">
+                <div id="faqHeading">
+                    <h1 class="display-4 headingStyle" style="font-size: 34px">
+                        <span class="boldMe" style="font-size: 45px">FAQ</span>'s
+                    </h1>
+                    <div class="UnderLineForTxt my-2"></div>
                 </div>
-                <div class="mb-3">
-                  <label for="textareaId" class="form-label"
-                    >Message
-                    <span style="font-weight: 200; color: gray"
-                      >(required)</span
-                    >
-                  </label>
-                  <textarea name="textArea" id="textareaId" required></textarea>
+                <div id="faqContent">
+                    <div class="faqElements">
+                        <div class="faqEle faqEle1">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Question 1: Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Debitis, vel.
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong>
+                                            It is shown by default, until the collapse plugin adds
+                                            the appropriate classes that we use to style each
+                                            element. These classes contr.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Question 2: Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Debitis, vel.
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong>
+                                            It is hidden by default, until the collapse plugin adds
+                                            the appropriate classes that we use to style each
+                                            element. These classes control the overall appearance,
+                                            as well as the showing and hiding via CSS transitions.
+                                            You can modify any of this with custom CSS or
+                                            overriding.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqEle faqEle2">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree">
+                                            Question 3: Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Debitis, vel.
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong>
+                                            It is hidden by default, until the collapse plugin adds
+                                            the appropriate classes that we use to style each
+                                            element. These classes control the overall appearance,
+                                            as well as the showing and hiding via CSS transitions.
+                                            You can modify any of this with custom CSS or overriding
+                                            our default variables. It's also worth noting that just
+                                            about any HTML can go within the
+                                            <code>.accordion-body</code>, though the transition does
+                                            limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Question 4: Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Debitis, vel.
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong>
+                                            It is hidden by default, until the collapse plugin adds
+                                            the appropriate classes that we use to style each
+                                            element. These classes control the overall appearance,
+                                            as well as the showing and hiding via CSS transitions.
+                                            You can modify any of this with custom CSS or overriding
+                                            our default variables. It's also worth noting that just
+                                            about any HTML can go within the
+                                            <code>.accordion-body</code>, though the transition does
+                                            limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="border: none"
-                >
-                  Submit
-                </button>
-              </form>
             </div>
-          </div>
-        </div>
-        <div id="contactSectionImage">
-          <div class="displayContactUsImage">
-            <img src="./images/aboutImg3.png" alt="Contact Img" />
-          </div>
-        </div>
-      </section>
+        </section>
+        <!-- ! FAQ Page **ends -->
 
-      <!-- ! Contact Us Page **ends -->
+        <!-- ! Contact Us Page **starts -->
+
+        <section class="fluid-container" id="contactUs">
+            <div id="contactSectionText">
+                <div id="contactUsHeading">
+                    <h1 class="display-4 headingStyle">
+                        <span class="boldMe" style="font-size: 45px">C</span>ontact
+                        <span class="boldMe" style="font-size: 45px">U</span>s
+                    </h1>
+                    <div class="UnderLineForTxt my-2"></div>
+                </div>
+                <div id="contactUsForm">
+                    <div class="contactUsFormDetail">
+                        <!-- Form Creation -->
+                        <form action="/" method="post">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Your Name
+                                    <span style="font-weight: 200; color: gray">(required)</span>
+                                </label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address
+                                    <span style="font-weight: 200; color: gray">(required)</span>
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required />
+                                <div id="emailHelp" class="form-text">
+                                    We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="textareaId" class="form-label">Message
+                                    <span style="font-weight: 200; color: gray">(required)</span>
+                                </label>
+                                <textarea name="textArea" id="textareaId" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="border: none">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="contactSectionImage">
+                <div class="displayContactUsImage">
+                    <img src="./images/aboutImg3.png" alt="Contact Img" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Contact Us Page **ends -->
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="http://code.jquery.com/jquery-1.4.2.min.js"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
     <script src="./js/script.js"></script>
-  </body>
+</body>
+
 </html>
