@@ -342,7 +342,7 @@ section.hero .home-text {
 
 /* Benefits of joinig Us */
 #benefitsOfJoiningUs {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 50%;
     width: 100%;
 }
