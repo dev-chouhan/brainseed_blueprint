@@ -13,11 +13,18 @@
     --body: #fefefe;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.p-3{
+    padding: 0 !important;
+}
+
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     background-color: var(--body);
-    margin: 0%;
-    padding: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -349,11 +356,11 @@ section.hero .home-text {
     margin-top: 4rem;
 }
 
-#benefitsOfJoiningUs .headingStyle{
+#benefitsOfJoiningUs .headingStyle {
     font-size: 38px !important;
 }
 
-#benefitsOfJoiningUs .UnderLineForTxt{
+#benefitsOfJoiningUs .UnderLineForTxt {
     margin-left: 20% !important;
 }
 
@@ -362,17 +369,20 @@ section.hero .home-text {
     font-size: 28px;
     line-height: 2;
     color: black;
-    
+
 }
-#benefitsOfJoiningUs .benifitcont{
+
+#benefitsOfJoiningUs .benifitcont {
     margin-right: 37%;
     padding: 2rem;
 }
-#benefitsOfJoiningUs .benbenifitImage{
+
+#benefitsOfJoiningUs .benbenifitImage {
     align-items: flex-start;
     display: flex;
-    
+
 }
+
 #benefitsOfJoiningUs>.container>#benifitImage>.imgContainer1>img {
     height: 36%;
     width: 36%;
@@ -850,7 +860,7 @@ section.hero .home-text {
 
 /* Team page here */
 #joinTeamPage {
-    height: 80vmax;
+    height: 50vmax;
     width: 98.5vw;
     /* border: 2px solid black; */
 }
@@ -1009,6 +1019,7 @@ section.hero .home-text {
     align-items: center;
     flex-direction: column;
     padding-top: 5%;
+    padding-bottom: -3%;
 }
 
 #showoffPage>#showOffPage2>.ourSponsers>#sponsersLogoArea {
@@ -1087,15 +1098,15 @@ section.hero .home-text {
 
 /*  FAQ's Page */
 #faqPage {
-    height: 60vmax;
+    height: 45vmax;
     width: 100vw;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
-
+/* 
 #faqPage>#faqPageInline {
     height: 100%;
     width: 100%;
-    /* background-color: #1b75e3; */
+    background-color: #1b75e3;
     color: #010101 !important;
 }
 
@@ -1120,44 +1131,52 @@ section.hero .home-text {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#faqPage>#faqPageInline>#faqContent>.faqElements {
-    height: 100%;
-    width: 90%;
+    border: 2px solid red;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    /* border: 2px solid cadetblue; */
 }
 
-#faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
-    width: 45%;
+#faqPage .faqContantBlock {
+    border: 2px solid blue;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6% 2%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#faqPage .gridEleForFaq {
+    display: inline-grid;
     height: 100%;
-    /* border: 2px solid goldenrod; */
+    width: 100%;
+    border: 2px solid red;
+    box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
 }
 
-#faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle .accordion-item {
-    background-color: transparent;
-    border: none;
+#faqPage .accordion-button{
+    border: 2px solid rgba(233, 233, 233, 0.188);
 }
 
-#faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle .accordion-header {
-    padding: 1rem 2rem;
-    background-color: transparent !important;
+#faqPage .gridEleForFaq button {
+    background-color: #fff;
+    color: #010101;
+    box-shadow: none;
 }
 
-#faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle button {
-    background-color: transparent;
-    color: #010101 !important;
-    font-weight: 800;
+#faqPage .gridEleForFaq button:active {
+    background-color: #dee9f7;
 }
 
-#faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle button:focus {
-    outline: none !important;
-    border: none !important;
-}
+#faqPage .gridEleForFaq pre {
+    font-size: 1.15rem;
+} */
 
 /* Contact US Page */
 #contactUs {
@@ -1219,6 +1238,13 @@ section.hero .home-text {
     /* border: 2px solid pink; */
 }
 
+#contactUs>#contactSectionText .contactUsFormDetail .contactErrorMessage{
+    border: 2px solid red;
+    width: 100%;
+    padding: 7px 15px;
+    margin: 8px 0;
+}
+
 #contactUs>#contactSectionText .contactUsFormDetail textarea {
     height: 15vh;
     width: 100%;
@@ -1228,16 +1254,17 @@ section.hero .home-text {
 #contactUs>#contactSectionText .contactUsFormDetail input {
     font-size: 1.28rem;
     border: 2px solid grey;
+    box-shadow: none;
     font-weight: 500;
 }
 
-#contactUs>#contactSectionText .contactUsFormDetail input:focus{
+#contactUs>#contactSectionText .contactUsFormDetail input:focus {
     border: 3px solid grey;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-#contactUs>#contactSectionText .contactUsFormDetail textarea{
+#contactUs>#contactSectionText .contactUsFormDetail textarea {
     font-size: 1rem;
     font-weight: 700;
     border: 2px solid grey;
@@ -1245,24 +1272,122 @@ section.hero .home-text {
 }
 
 /* Footer setion*/
-footer {
-    padding-top: 279px;
-    margin-bottom: 44px;
+/* Footer */
+
+#footerSection{
+    width: 100%;
+    height: 125vh;
+    color: #fff;
 }
 
-footer a {
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--black);
-    line-height: 18px;
+#footerSection footer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-footer .copy {
-    margin-top: 32px;
-    font-size: 14px;
-    color: var(--gray-1);
-    line-height: 17px;
-    font-weight: 400;
+#footerSection footer #footerImg{
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 60%;
+    position: relative;
+    left: 40%;
+    top: 0;
+    background-image: url(https://raw.githubusercontent.com/dev-chouhan/begineerFrontEnd.github.io/main/footerImage01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footerSection footer #footerText{
+    background-color: black;
+    width: 90%;
+    height: 70%;
+    position: relative;
+    top: -30%;
+    overflow: hidden;
+}
+
+.FooterLeftTop{
+    position: absolute;
+    top: 4%;
+    left: 3.5%;
+    height: 55%;
+    width: 37%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid: auto auto / auto auto;
+    line-height: 1.5em;
+}
+
+.FooterLeftTop > span{
+    text-decoration:line-through;
+    color: #fff;
+    
+}
+
+.FooterLeftTop > .FooterCombination{
+    display: flex;
+    /* border: 2px solid green; */
+    flex-direction: column;
+    text-align: left;
+    /* align-items: center; */
+    padding-left: 25%;
+    justify-content: center;
+}
+
+.FooterLeftTop > .Light{
+    color: rgb(128, 128, 128) !important;
+}
+
+.FooterLeftBottom{
+    position: relative;
+    top: 80%;
+    left: 10em;
+    height: 18%;
+    width: 30%;
+    /* border: 2px solid blue; */
+}
+
+.FooterRightTop {
+    /* border: 2px solid pink; */
+    height: 75%;
+    width: 46%;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 5em;
+}
+
+.FooterRightTop .FooterText{
+    border: 2px solid black;
+}
+
+.FooterRightBottom{
+    /* border: 2px solid slateblue; */
+    height: 18%;
+    width: 30%;
+    position: absolute;
+    bottom: -5%;
+    right: 10em;
+}
+
+.FooterLeftBottom, #FooterMain > .FooterRightBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back To Top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
 
 /*Responsive section*/
@@ -1273,15 +1398,15 @@ footer .copy {
         height: 90%;
     }
 
-    #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
+    /* #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
         margin-top: 0 !important;
-    }
+    } */
 
     .homeImg {
         margin: 0;
     }
 
-    #benefitsOfJoiningUs{
+    #benefitsOfJoiningUs {
         height: 70vmax;
     }
 
@@ -1337,7 +1462,7 @@ footer .copy {
         margin-top: 2rem;
     }
 
-    #faqPage {
+    /* #faqPage {
         height: 100vmax;
     }
 
@@ -1348,7 +1473,7 @@ footer .copy {
     #faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
         width: 100%;
         height: 46vh;
-    }
+    } */
 
     #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard {
         width: 100%;
@@ -1361,6 +1486,9 @@ footer .copy {
     #contactUs>#contactSectionImage>.displayContactUsImage {
         height: 30%;
     }
+    /* #faqPage .faqContantBlock {
+        grid-template-columns: 1fr;
+    } */
 }
 
 @media (max-width: 780px) {
@@ -1380,6 +1508,17 @@ footer .copy {
         margin: 3px 7px 8px 0;
         font-weight: 200;
         color: var(--primary-dark);
+    }
+
+    #footerSection footer #footerImg{
+        width: 0;
+        height: 0;
+    }
+
+    #footerSection footer #footerText{
+        width: 100%;
+        height: 100%;
+        margin-top: 32%;
     }
 
     .nav-link {
@@ -1441,7 +1580,7 @@ footer .copy {
     }
 
     #joinTeamPage {
-        height: 100vmax;
+        height: 50vmax;
     }
 
     #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>a {
@@ -1471,15 +1610,15 @@ footer .copy {
         padding: 4px 13px;
     }
 
-    #benefitsOfJoiningUs{
+    #benefitsOfJoiningUs {
         height: 82vmax;
     }
 
-    #benefitsOfJoiningUs .benifitcont{
+    #benefitsOfJoiningUs .benifitcont {
         width: 100%;
     }
 
-    #benefitsOfJoiningUs #benifitImage{
+    #benefitsOfJoiningUs #benifitImage {
         width: 0;
     }
 
@@ -1512,12 +1651,15 @@ footer .copy {
         font-size: 0.8rem;
     }
 
-    #faqPage {
+    /* #faqPage {
         height: 120vmax;
     }
 
+    #faqPage .faqContantBlock {
+        grid-template-columns: 1fr;
+    } */
+
     #contactUs {
-        margin-top: 68vmin;
         height: 102vmax;
     }
 }
@@ -1590,23 +1732,24 @@ footer .copy {
     #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
         height: 170rem;
     }
-    
+
     /* Benefit of joining us */
     #benefitsOfJoiningUs {
         height: 140vmax;
         margin-top: 175vmax;
     }
+
     #benefitsOfJoiningUs .UnderLineForTxt {
         margin-left: 44% !important;
         margin-top: -18% !important;
         width: 9%;
     }
 
-    #contactUs>#contactSectionImage{
+    #contactUs>#contactSectionImage {
         width: 0;
     }
 
-    #contactUs>#contactSectionText{
+    #contactUs>#contactSectionText {
         width: 100%;
     }
 
@@ -1713,17 +1856,17 @@ footer .copy {
     }
 
     /* FAQ Page */
-    #fanPage {
+    /* #faqPage {
         margin-top: -30vh;
-    }
+    } */
 
-    #faqPage>#faqPageInline>#faqContent>.faqElements {
+    /* #faqPage>#faqPageInline>#faqContent>.faqElements {
         flex-direction: column;
     }
 
     #faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
         width: 100%;
-    }
+    } */
 }
 
 @media (max-width: 576px) {
