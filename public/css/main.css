@@ -343,10 +343,44 @@ section.hero .home-text {
 
 /* Benefits of joinig Us */
 #benefitsOfJoiningUs {
-    border: 2px solid black;
-    height: 100vh;
-    width: 98.5vw;
+    /* border: 2px solid black; */
+    height: 45vmax;
+    width: 100%;
+    margin-top: 4rem;
 }
+
+#benefitsOfJoiningUs .headingStyle{
+    font-size: 38px !important;
+}
+
+#benefitsOfJoiningUs .UnderLineForTxt{
+    margin-left: 20% !important;
+}
+
+#benefitsOfJoiningUs .text2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 2;
+    color: black;
+    
+}
+#benefitsOfJoiningUs .benifitcont{
+    margin-right: 37%;
+    padding: 2rem;
+}
+#benefitsOfJoiningUs .benbenifitImage{
+    align-items: flex-start;
+    display: flex;
+    
+}
+#benefitsOfJoiningUs>.container>#benifitImage>.imgContainer1>img {
+    height: 36%;
+    width: 36%;
+    margin-top: -37%;
+    margin-left: 65%;
+}
+
+
 
 /* Team Members page */
 #teamMembersPage {
@@ -892,7 +926,7 @@ section.hero .home-text {
 
 /* 1st show off page */
 #showoffPage>#showOffPage1 {
-    height: 50%;
+    height: 30%;
     width: 100%;
     /* border: 2px solid red; */
 }
@@ -1129,7 +1163,7 @@ section.hero .home-text {
 #contactUs {
     height: 100vh;
     width: 100vw;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
 }
 
@@ -1152,12 +1186,11 @@ section.hero .home-text {
 #contactUs>#contactSectionText>#contactUsForm {
     height: 85%;
     width: 100%;
-    /* border: 2px solid violet; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 #contactUs>#contactSectionImage {
@@ -1183,7 +1216,7 @@ section.hero .home-text {
 #contactUs>#contactSectionText .contactUsFormDetail {
     height: 80%;
     width: 85%;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 
 #contactUs>#contactSectionText .contactUsFormDetail textarea {
@@ -1193,8 +1226,22 @@ section.hero .home-text {
 }
 
 #contactUs>#contactSectionText .contactUsFormDetail input {
-    font-size: 1.5rem;
+    font-size: 1.28rem;
+    border: 2px solid grey;
+    font-weight: 500;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail input:focus{
+    border: 3px solid grey;
+    font-size: 1.3rem;
     font-weight: 700;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail textarea{
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid grey;
+    font-weight: 500;
 }
 
 /* Footer setion*/

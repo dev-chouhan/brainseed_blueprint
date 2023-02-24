@@ -41,15 +41,15 @@
                     <a class="nav-link" href="#eventPage">Events</a>
                     <a class="nav-link" href="#blogPage">Blogs</a>
                 </div>
-                <a href="#" class="btn btn-outline-secondary shadow-sm d-sm d-block ms-4">Contact Us</a>
+                <a href="#contactUs" class="btn btn-outline-secondary shadow-sm d-sm d-block ms-4">Contact Us</a>
                 <div class="dropdown ms-3">
                     <a class="btn btn-primary dropdown-toggle joinNavBtn" href="#" role="button" id="dropdownMenuLink"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Join Us
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Core Team</a></li>
-                        <li><a class="dropdown-item" href="#">Volunteer Team</a></li>
+                        <li><a class="dropdown-item" href="#joinTeamPage">Core Team</a></li>
+                        <li><a class="dropdown-item" href="#joinTeamPage">Volunteer Team</a></li>
                         <li><a class="dropdown-item" href="#">Collaborations</a></li>
                     </ul>
                 </div>
@@ -244,7 +244,38 @@
         <!-- ! Join us on other platforms **ends-->
 
         <!-- ! Benefits of joining us **starts -->
-        <section class="fuild-container" id="benefitsOfJoiningUs"></section>
+        <section class="fuild-container" id="benefitsOfJoiningUs">
+            <div class="container">
+                <div class="benifitcont">
+                    <!-- Text -->
+                    <h1 class="display-4 headingStyle">
+                        <span class="boldMe" style="font-size: 45px">B</span>enefit Of
+                        <span class="boldMe" style="font-size: 45px">J</span>oining <span class="boldMe" style="font-size: 45px">U</span>s
+                    </h1>
+                    <div class="UnderLineForTxt my-2" style="margin-left: -2rem"></div>
+                        <br><br><br><br><br><br>
+                        <div class="text2">Workshops and Meeting Sessions</div>
+                        <p class="card-text my-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, asperiores? Odit distinctio reprehenderit excepturi cumque repellendus! Tenetur rem omnis architecto quia eligendi, aspernatur debitis, eos magnam ipsa ab vero tempora!.
+                        </p>
+                        <div class="text2">Workshops and Meeting Sessions</div>
+                        <p class="card-text my-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quaerat laborum cum quibusdam dicta aut distinctio? Doloribus accusamus delectus quasi mollitia id voluptatum voluptatem, minus nemo enim eaque facere illo.
+                        </p>
+                        <div class="text2">Workshops and Meeting Sessions</div>
+                        <p class="card-text my-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum adipisci laboriosam repellat alias et. Reiciendis cumque, labore quasi quae et, eaque accusamus at molestiae voluptatibus placeat corporis ullam dolore cum?
+                        </p>
+                </div>        
+                <!-- image -->
+                <div id="benifitImage">
+                    <div class="imgContainer1">
+                        <img src="./images/benifit.jpg" alt="AbouImg" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <!-- ! Benefits of joining us **ends -->
 
         <!-- ! Team Page **starts -->
@@ -648,7 +679,7 @@
         <!-- ! Show Off Page **starts -->
 
         <section class="fluid-container" id="showoffPage">
-            <section id="showOffPage1">
+            <section id="showOffPage1" hover="animateValue('membersCount', 0, 500, 5000); animateValue('eventsCount', 0, 250, 5000); animateValue('opporCount', 0, 200, 5000);">
                 <div class="communityPastAcheivementsBorder">
                     <div class="acheiventsBlockBorder">
                         <div class="acheiventsBlocks">
@@ -656,7 +687,7 @@
                                 <i class="icon fas fa-rocket"></i>
                             </div>
                             <span class="acheiventsCount acheivementsElements">
-                                <div id="membersCount">500</div>
+                                <div id="membersCount"></div>
                                 +
                             </span>
                             <div class="acheiventsText acheivementsElements">
@@ -670,7 +701,7 @@
                                 <i class="icon fas fa-rocket"></i>
                             </div>
                             <span class="acheiventsCount acheivementsElements">
-                                <div id="eventsCount">250</div>
+                                <div id="eventsCount"></div>
                                 +
                             </span>
                             <div class="acheiventsText acheivementsElements">Events</div>
@@ -682,7 +713,7 @@
                                 <i class="icon fas fa-rocket"></i>
                             </div>
                             <span class="acheiventsCount acheivementsElements">
-                                <div id="opporCount">200</div>
+                                <div id="opporCount"></div>
                                 +
                             </span>
                             <div class="acheiventsText acheivementsElements">
