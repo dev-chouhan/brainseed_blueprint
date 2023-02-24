@@ -1281,6 +1281,10 @@ footer .copy {
         margin: 0;
     }
 
+    #benefitsOfJoiningUs{
+        height: 70vmax;
+    }
+
     #About-Page {
         height: 120vmax;
     }
@@ -1467,8 +1471,16 @@ footer .copy {
         padding: 4px 13px;
     }
 
-    #benefitsOfJoiningUs {
-        margin-top: 40rem;
+    #benefitsOfJoiningUs{
+        height: 82vmax;
+    }
+
+    #benefitsOfJoiningUs .benifitcont{
+        width: 100%;
+    }
+
+    #benefitsOfJoiningUs #benifitImage{
+        width: 0;
     }
 
     #teamMembersPage>#teamMembersArea {
@@ -1578,12 +1590,26 @@ footer .copy {
     #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
         height: 170rem;
     }
-
+    
     /* Benefit of joining us */
     #benefitsOfJoiningUs {
-        height: 100vh;
-        margin-top: 120rem;
+        height: 140vmax;
+        margin-top: 175vmax;
     }
+    #benefitsOfJoiningUs .UnderLineForTxt {
+        margin-left: 44% !important;
+        margin-top: -18% !important;
+        width: 9%;
+    }
+
+    #contactUs>#contactSectionImage{
+        width: 0;
+    }
+
+    #contactUs>#contactSectionText{
+        width: 100%;
+    }
+
 
     /* team members */
     #teamMembersPage {
