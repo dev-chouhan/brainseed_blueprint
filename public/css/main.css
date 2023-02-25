@@ -16,9 +16,9 @@
 * {
     margin: 0;
     padding: 0;
-} 
+}
 
-.p-3{
+.p-3 {
     padding: 0 !important;
 }
 
@@ -98,6 +98,17 @@ body {
     background-color: var(--primary);
     border: 1px solid var(--gray-2);
     color: var(--body);
+}
+
+/* Alert signals */
+
+body>.alert {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding-left: 5%;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 /*Navbar*/
@@ -1102,6 +1113,7 @@ section.hero .home-text {
     width: 100vw;
     border: 2px solid black;
 }
+
 /* 
 #faqPage>#faqPageInline {
     height: 100%;
@@ -1238,7 +1250,7 @@ section.hero .home-text {
     /* border: 2px solid pink; */
 }
 
-#contactUs>#contactSectionText .contactUsFormDetail .contactErrorMessage{
+#contactUs>#contactSectionText .contactUsFormDetail .contactErrorMessage {
     border: 2px solid red;
     width: 100%;
     padding: 7px 15px;
@@ -1249,6 +1261,9 @@ section.hero .home-text {
     height: 15vh;
     width: 100%;
     resize: vertical;
+    box-shadow: 2px -2px 14px -4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px -2px 14px -4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px -2px 14px -4px rgba(0, 0, 0, 0.5);
 }
 
 #contactUs>#contactSectionText .contactUsFormDetail input {
@@ -1256,6 +1271,9 @@ section.hero .home-text {
     border: 2px solid grey;
     box-shadow: none;
     font-weight: 500;
+    box-shadow: 2px -2px 14px -4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px -2px 14px -4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px -2px 14px -4px rgba(0, 0, 0, 0.5);
 }
 
 #contactUs>#contactSectionText .contactUsFormDetail input:focus {
@@ -1274,19 +1292,19 @@ section.hero .home-text {
 /* Footer setion*/
 /* Footer */
 
-#footerSection{
+#footerSection {
     width: 100%;
     height: 125vh;
     color: #fff;
 }
 
-#footerSection footer{
+#footerSection footer {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-#footerSection footer #footerImg{
+#footerSection footer #footerImg {
     /* border: 2px solid black; */
     width: 60%;
     height: 60%;
@@ -1299,7 +1317,7 @@ section.hero .home-text {
     background-size: cover;
 }
 
-#footerSection footer #footerText{
+#footerSection footer #footerText {
     background-color: black;
     width: 90%;
     height: 70%;
@@ -1308,39 +1326,20 @@ section.hero .home-text {
     overflow: hidden;
 }
 
-.FooterLeftTop{
+.FooterLeftTop {
     position: absolute;
-    top: 4%;
+    top: 16%;
     left: 3.5%;
     height: 55%;
     width: 37%;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: grid;
     grid: auto auto / auto auto;
     line-height: 1.5em;
 }
 
-.FooterLeftTop > span{
-    text-decoration:line-through;
-    color: #fff;
-    
-}
 
-.FooterLeftTop > .FooterCombination{
-    display: flex;
-    /* border: 2px solid green; */
-    flex-direction: column;
-    text-align: left;
-    /* align-items: center; */
-    padding-left: 25%;
-    justify-content: center;
-}
-
-.FooterLeftTop > .Light{
-    color: rgb(128, 128, 128) !important;
-}
-
-.FooterLeftBottom{
+.FooterLeftBottom {
     position: relative;
     top: 80%;
     left: 10em;
@@ -1363,11 +1362,11 @@ section.hero .home-text {
     padding: 0em 5em;
 }
 
-.FooterRightTop .FooterText{
+.FooterRightTop .FooterText {
     border: 2px solid black;
 }
 
-.FooterRightBottom{
+.FooterRightBottom {
     /* border: 2px solid slateblue; */
     height: 18%;
     width: 30%;
@@ -1376,7 +1375,8 @@ section.hero .home-text {
     right: 10em;
 }
 
-.FooterLeftBottom, #FooterMain > .FooterRightBottom{
+.FooterLeftBottom,
+#FooterMain>.FooterRightBottom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1486,6 +1486,7 @@ section.hero .home-text {
     #contactUs>#contactSectionImage>.displayContactUsImage {
         height: 30%;
     }
+
     /* #faqPage .faqContantBlock {
         grid-template-columns: 1fr;
     } */
@@ -1510,12 +1511,12 @@ section.hero .home-text {
         color: var(--primary-dark);
     }
 
-    #footerSection footer #footerImg{
+    #footerSection footer #footerImg {
         width: 0;
         height: 0;
     }
 
-    #footerSection footer #footerText{
+    #footerSection footer #footerText {
         width: 100%;
         height: 100%;
         margin-top: 32%;

@@ -22,6 +22,13 @@
 </head>
 
 <body>
+    
+    <% if(displayMessage.length > 0){%>
+    <div class="alert alert-<%=typeOfMsg%>" role="alert" id="disapearMeAfter2Seconds">
+        <span style="font-size: 1.1rem; font-weight: 700; padding-right: 0.5%;"><%= displayMessageHeading %>: </span><%= displayMessage %>
+    </div>
+    <%}%>
+
     <!--! Navbar section **Start-->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -931,35 +938,33 @@
                 </div>
                 <div id="contactUsForm">
                     <div class="contactUsFormDetail">
-                        <!-- error message -->
-                        <div class="contactErrorMessage"></div>
                         <!-- Form Creation -->
                         <form action="/" method="post">
                             <div class="mb-3">
                                 <label for="exampleInputName1" class="form-label">Your Name
                                     <span style="font-weight: 200; color: gray">(required)</span>
                                 </label>
-                                <input type="text" class="form-control" id="exampleInputName1" required />
+                                <input type="text" class="form-control" name="senderName0" id="exampleInputName1" required />
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address
                                     <span style="font-weight: 200; color: gray">(required)</span>
                                 </label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" required />
+                                    aria-describedby="emailHelp" name="senderEmail0" required />
                                 <div id="emailHelp" class="form-text">
                                     We'll never share your email with anyone else.
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputSubject1" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="exampleInputSubject1" />
+                                <input type="text" class="form-control" name="senderSubject0" id="exampleInputSubject1" />
                             </div>
                             <div class="mb-3">
                                 <label for="textareaId" class="form-label">Message
                                     <span style="font-weight: 200; color: gray">(required)</span>
                                 </label>
-                                <textarea name="textArea" id="textareaId" required></textarea>
+                                <textarea name="senderMessage0" id="textareaId" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary" style="border: none">
                                 Submit
@@ -987,24 +992,7 @@
                 <div id="footerText">
                     <!-- Left side -->
                     <div class="FooterLeftTop">
-                        <div class="FooterCombination">
-                            <div style="color: rgba(223, 223, 223, 0.623)">Phone </div>(+91)89895 23880
-                        </div>
-                        <div class="FooterCombination">
-                            <div style="color: rgba(223, 223, 223, 0.623)">Email </div>rdev48444@gmail.com
-                        </div>
-                        <div class="FooterCombination">
-                            <div style="font-size: 0.9em;">Made in India With LOVE &hearts;</div>
-                        </div>
-                        <div class="FooterCombination">
-                            <div style="color: rgba(223, 223, 223, 0.623)">Follow Me</div> <span><a
-                                    href="https://www.instagram.com/dev_chouhan.48/"
-                                    style="text-decoration: none; color: aliceblue;" target="_blank">In . </a><a
-                                    href="https://github.com/dev-chouhan"
-                                    style="text-decoration: none; color: aliceblue;" target="_blank">Git . </a><a
-                                    href="https://www.linkedin.com/in/devradityasinghchouhan24/"
-                                    style="text-decoration: none; color: aliceblue;" target="_blank">Lk</a></span>
-                        </div>
+                        <h1>BrainSeed Networks</h1>
                     </div>
                     <div class="FooterLeftBottom" style="color: rgba(223, 223, 223, 0.445)"> &copy; Copyright Claimed
                     </div>

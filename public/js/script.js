@@ -52,3 +52,8 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+setTimeout(() => {
+    const disapearMe = document.getElementById("disapearMeAfter2Seconds")
+    disapearMe.style.display = 'none';
+}, 5000);
