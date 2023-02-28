@@ -1289,6 +1289,16 @@ section.hero .home-text {
     font-weight: 500;
 }
 
+#textareaId{
+    padding: 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+::placeholder{
+    color: #777;
+}
+
 /* Footer setion*/
 /* Footer */
 

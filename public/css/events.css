@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+#eventsHeader{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100%;
+}
+
+#eventsHeader > .events-heading{
+    height: 55%;
+    width: 100%;
+    background-color: rgb(5, 195, 5);
+}
+
+#eventsHeader > .events-heading > nav{
+    height: 8%;
+    background-color: rgb(2, 165, 2);
+    width: 100%;
+    position: fixed;
+}
+
+#eventsHeader > .events-heading > nav a{
+    padding-left: 7%;
+    font-weight: 600;
+    color: #f8f9fa;
+}
+
+#eventsHeader > .events-heading > .event-heading-block{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventsHeader > .events-heading > .event-heading-block > .event-heading-block-element-block{
+    /* border: 2px solid red; */
+    height: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventsHeader > .events-heading > .event-heading-block > .event-heading-block-element-block > h1{
+    font-size: 11rem;
+    font-weight: 800;
+    color: #f8f9fa;
+}
+
+#eventsHeader > .events-detail{
+    height: 45%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 252, 246);
+}
+
+#eventsHeader > .events-detail > .events-detail-elements{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#eventsHeader > .events-detail > .events-detail-elements > .acheiventsBlockBorder{
+    height: 90%;
+    width: 30%;
+    margin: 2rem;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventsHeader > .events-detail> .events-detail-elements > .acheiventsBlockBorder>.acheiventsBlocks {
+    /* border: 2px solid red; */
+    height: 85%;
+    width: 75%;
+}
+
+#eventsHeader > .events-detail> .events-detail-elements > .acheiventsBlockBorder>.acheiventsBlocks>.acheivementsElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventsHeader > .events-detail> .events-detail-elements>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsCount {
+    height: 30%;
+    /* border: 2px solid green; */
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#eventsHeader > .events-detail> .events-detail-elements>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsText {
+    height: 25%;
+    /* border: 2px solid saddlebrown; */
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/*** Events displaying area  */
+
+#eventsDisplayArea{
+    height: 45vmax;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eventsDisplayArea > #events-display-area-container{
+    height: 95%;
+    width: 95%;
+    /* border: 2px solid blue; */
+    overflow: hidden;
+}
+
+#eventsDisplayArea > #events-display-area-container > .upper-display-area{
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 100%;
+}
+
+#eventsDisplayArea > #events-display-area-container > .upper-display-area > .typeOfEvents{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#eventsDisplayArea > #events-display-area-container > .upper-display-area > .typeOfEvents > li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+#eventsDisplayArea > #events-display-area-container > .upper-display-area > .typeOfEvents > li:hover{
+    cursor: pointer;
+}
+
+#eventsDisplayArea > #events-display-area-container > .lower-display-area{
+    border: 2px solid red;
+    height: 90%;
+    width: 300%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* ToDo............... */
+
+#eventsDisplayArea .eventElements{
+    transition: all 0.5s;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+#eventsDisplayArea .eventElements:nth-child(1){
+    background-color: blueviolet;
+}
+
+#eventsDisplayArea .eventElements:nth-child(2){
+    /* left: 50%; */
+    background-color: aqua;
+}
+#eventsDisplayArea .eventElements:nth-child(3){
+    /* left: 50%; */
+    background-color: blanchedalmond;
+}

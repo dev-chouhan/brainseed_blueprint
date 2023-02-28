@@ -84,7 +84,9 @@ app.get('/coremem', function(req, res){
     res.render("coreMembers");
 })
 
-// Post requests
+app.get('/eventDetails', function(req, res){
+    res.render("eventDetails");
+})
 
 
 // Serving listening on Port
