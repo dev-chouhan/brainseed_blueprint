@@ -33,16 +33,34 @@ pastEventsNav.onclick = function(){
     pastEvents.style.left = "0";
     upcomingEvents.style.left = "0";
     ongoingEvents.style.left = "0";
+    pastEventsNav.style.backgroundColor = "#f3f9f3";
+    upcomingEventsNav.style.backgroundColor = "#fff";
+    ongoingEventsNav.style.backgroundColor = "#fff"
+    pastEventsNav.style.borderBottom = "2px solid #dff3df";
+    upcomingEventsNav.style.borderBottom = "none";
+    ongoingEventsNav.style.borderBottom = "none";
 }
 
 upcomingEventsNav.onclick = function(){
     upcomingEvents.style.left = "-33.38%";
     pastEvents.style.left = "-33.38%";
     ongoingEvents.style.left = "-33.38%";
+    upcomingEventsNav.style.backgroundColor = "#f3f9f3";
+    pastEventsNav.style.backgroundColor = "#fff";
+    ongoingEventsNav.style.backgroundColor = "#fff";
+    pastEventsNav.style.borderBottom = "none";
+    upcomingEventsNav.style.borderBottom = "2px solid #dff3df";
+    ongoingEventsNav.style.borderBottom = "none";
 }
 
 ongoingEventsNav.onclick = function(){
     ongoingEvents.style.left = "-66.72%";
     upcomingEvents.style.left = "-66.72%";
     pastEvents.style.left = "-66.72%";
+    ongoingEventsNav.style.backgroundColor = "#f3f9f3";
+    pastEventsNav.style.backgroundColor = "#fff";
+    upcomingEventsNav.style.backgroundColor = "#fff";
+    pastEventsNav.style.borderBottom = "none";
+    upcomingEventsNav.style.borderBottom = "none";
+    ongoingEventsNav.style.borderBottom = "2px solid #dff3df";
 }
