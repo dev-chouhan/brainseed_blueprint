@@ -1,0 +1,1980 @@
+/*Fonts setup*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+
+/*Color setup*/
+:root {
+    --primary: rgb(0, 80, 0);
+    --primary-dark: rgb(0, 64, 0);
+    --primary-light: rgb(1, 126, 1);
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2: #d3d4db;
+    --white: #ffffff;
+    --body: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.p-3{
+    padding: 0 !important;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--body);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Common Parts */
+
+.UnderLineForTxt {
+    border-bottom: 3px solid var(--gray-1);
+    width: 18%;
+    margin-left: -0.4rem;
+    margin-top: -0.5rem !important;
+    width: 3%;
+}
+
+.boldMe {
+    font-weight: 400;
+    font-size: 63px;
+    color: var(--primary-dark);
+}
+
+.container-fuild {
+    margin-left: -0.6vw;
+}
+
+/*Setup components*/
+
+/* button */
+.btn {
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+    padding: 8px 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.joinNavBtn {
+    font-size: 1rem;
+    border: none;
+}
+
+.joinNavBtn:focus {
+    background-color: #fefefe;
+    color: var(--primary-dark);
+    outline: none;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(--primary-dark);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--gray-2);
+    color: var(--white) !important;
+}
+
+.btn-outline-secondary:focus {
+    background-color: var(--primary);
+    border: 1px solid var(--gray-2);
+    color: var(--body);
+}
+
+/*Navbar*/
+
+.navbar .btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.navbar {
+    padding: 32px 0;
+}
+
+.nav-link {
+    margin-left: 41px;
+    font-size: 18px;
+    color: var(--primary-light);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/*Hero setion*/
+section.hero {
+    padding: 60px 0 80px 0;
+}
+
+section.hero .text {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+    color: var(--primary);
+}
+
+section.hero .hashtag {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--primary-light);
+}
+
+section.hero .home-text {
+    padding-top: 35px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #788190;
+}
+
+.homeImg {
+    margin-top: -4rem;
+    margin-left: 5rem;
+    width: 35%;
+}
+
+.buttons {
+    padding-top: 20px;
+}
+
+.buttons .btn {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+/* About Section */
+#About-Page {
+    /*** Change height here to decrease or increase size of about container. */
+    /* border: 2px solid black; */
+    height: 55vmax;
+    width: 98.5vw;
+}
+
+#About-Page>.aboutEle {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#About-Page #aboutText {
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingStyle {
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 73px;
+    color: var(--primary);
+}
+
+#About-Page #aboutImage {
+    /* border: 2px solid blue; */
+    height: 80%;
+    width: 40%;
+}
+
+#About-Page>.aboutEle>#aboutImage>.imgContainer {
+    height: 90%;
+    width: 90%;
+    /* border: 2px solid green; */
+    margin: 5% auto;
+}
+
+#About-Page>.aboutEle>#aboutImage>.imgContainer>img {
+    height: 70%;
+    width: 100%;
+}
+
+/* Join Us on other platforms */
+#joinUsOnPlatforms {
+    height: 85vmax;
+    width: 98vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#joinUsOnPlatforms>#joinPlatforms {
+    /* border: 2px solid blue; */
+    height: 95%;
+    width: 85%;
+}
+
+#joinUsOnPlatforms i {
+    font-size: 4rem;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading h1 {
+    font-size: 38px;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
+    width: 100%;
+    height: 85%;
+    /* border: 2px solid black; */
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6% 3%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform {
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    width: 100%;
+    height: 100%;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card {
+    height: 100%;
+    width: 100%;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out 100ms;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp1 {
+    background-color: #ff0000;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp2 {
+    background-color: #0165e1;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp3 {
+    background-color: #0088cc;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp4 {
+    background-color: #0e76a8;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp5 {
+    background-color: #333333;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card:hover>.jp6 {
+    background-color: #128c7e;
+    color: #fefefe;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>h5 {
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>a {
+    font-size: 1rem;
+    padding: 7px 12px;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body:hover>a {
+    border: 1px solid white;
+    color: white;
+}
+
+#joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>a:hover {
+    background-color: transparent;
+    font-weight: 700;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Benefits of joinig Us */
+#benefitsOfJoiningUs {
+    /* border: 2px solid black; */
+    height: 55vmax;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#benefitsOfJoiningUs .headingStyle {
+    font-size: 38px !important;
+}
+
+#benefitsOfJoiningUs .UnderLineForTxt {
+    margin-left: 20% !important;
+}
+
+#benefitsOfJoiningUs .text2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 2;
+    color: black;
+
+}
+
+#benefitsOfJoiningUs .benifitcont {
+    margin-right: 37%;
+    padding: 2rem;
+}
+
+#benefitsOfJoiningUs .benbenifitImage {
+    align-items: flex-start;
+    display: flex;
+
+}
+
+#benefitsOfJoiningUs>.container>#benifitImage>.imgContainer1>img {
+    height: 36%;
+    width: 36%;
+    margin-top: -37%;
+    margin-left: 65%;
+}
+
+
+
+/* Team Members page */
+#teamMembersPage {
+    /* border: 2px solid black; */
+    height: 140vh;
+    width: 98.5vw;
+}
+
+#teamMembersPage>#teamMembersArea {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 75%;
+    margin: auto;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam {
+    width: 100%;
+    height: 45%;
+    /* border: 2px solid green; */
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
+    width: 100%;
+    height: 87%;
+    /* border: 2px solid red; */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
+    margin: 0 2rem;
+    width: 30%;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body>.card-link>i {
+    font-size: 2.5rem;
+    color: grey;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body>.card-link>i:hover {
+    color: #333333;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>img {
+    height: 60%;
+    width: 100%;
+}
+
+#teamMembersPage>#teamMembersArea>#coreTeam {
+    width: 100%;
+    margin-top: 2rem;
+    height: 55%;
+    /* border: 2px solid darkmagenta; */
+}
+
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards {
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+}
+
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
+    width: 100%;
+    height: 90%;
+    border: 2px solid blue;
+}
+
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton {
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#teamMembersPage>#teamMembersArea .teamMembersHeading {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Carosuol part in other file namely: carosuol.css */
+
+/* events area here */
+#eventPage {
+    /* border: 2px solid black; */
+    margin-top: 2rem;
+    height: 120vh;
+    width: 98.5vw;
+}
+
+#eventPage>#eventArea {
+    height: 100%;
+    width: 100%;
+}
+
+#eventPage>#eventArea>#eventHeading {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+#eventPage>#eventArea>#eventContent {
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+#eventPage>#eventArea>#eventContent>#eventContentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5% 5%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+#eventPage>#eventArea>#eventContent>#eventContentContainer>.eventGrid-item {
+    display: inline-grid;
+    height: 100%;
+    width: 100%;
+}
+
+#eventPage>#eventArea>#eventContent>#eventContentContainer>.eventContentContainerBlocks {
+    height: 80%;
+    width: 33%;
+    margin: 2rem;
+    /* border: 2px solid navy; */
+}
+
+#eventPage .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+#eventPage .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#eventPage .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+#eventPage .flip-card-front img {
+    border-radius: 10px;
+}
+
+/* Position the front and back side */
+#eventPage .flip-card-front,
+#eventPage .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    border-radius: 10px;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+#eventPage .flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+#eventPage .flip-card-front img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Style the back side */
+#eventPage .flip-card-back {
+    background-color: #f1f1f1;
+    color: var(--primary-dark);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Blog area here */
+
+#blogPage {
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 98.5vw;
+}
+
+#blogPage>#blogArea {
+    height: 100%;
+    width: 100%;
+}
+
+#blogPage>#blogArea>#blogHeading {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+#blogPage>#blogArea>#blogHeading>.blogHeadingText {
+    font-size: 3rem;
+    font-weight: 600;
+    /* border: 2px solid green; */
+}
+
+#blogPage>#blogArea>#blogPostsArea {
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blogPage>#blogArea>#blogPostsArea>.blogPosts {
+    height: 90%;
+    width: 80%;
+    /* border: 2px solid brown; */
+}
+
+#blogPostsArea .carousel {
+    display: block;
+    text-align: left;
+    position: relative;
+    margin-top: -2rem;
+}
+
+#blogPostsArea .carousel>input {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
+    margin-left: -500%;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
+    margin-left: -400%;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
+    margin-left: -300%;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
+    margin-left: -200%;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
+    margin-left: -100%;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
+    margin-left: 0%;
+}
+
+#blogPostsArea .carousel>input:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+#blogPostsArea .carousel>input:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+#blogPostsArea .carousel>input:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+#blogPostsArea .carousel>input:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+#blogPostsArea .carousel>input:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+#blogPostsArea .carousel>input:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+
+#blogPostsArea .carousel__slides {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#blogPostsArea .carousel__slide {
+    position: relative;
+    display: block;
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 300ms ease-out;
+    /* vertical-align: top; */
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+#blogPostsArea .carousel__slide figure {
+    display: flex;
+    margin: 0;
+    width: 70vw;
+    height: 54.5vh;
+}
+
+#blogPostsArea .carousel__slide div {
+    position: relative;
+    width: 100%;
+}
+
+#blogPostsArea .carousel__slide div:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 66.6666666667%;
+}
+
+#blogPostsArea .carousel__slide div>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#blogPostsArea .carousel__slide img {
+    display: block;
+    flex: 1 1 auto;
+    object-fit: cover;
+}
+
+#blogPostsArea .carousel__slide figcaption {
+    align-self: flex-end;
+    padding: 20px 20px 0 20px;
+    flex: 0 0 auto;
+    width: 25%;
+    min-width: 150px;
+}
+
+#blogPostsArea .carousel__slide .credit {
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+#blogPostsArea .carousel__slide.scrollable {
+    overflow-y: scroll;
+}
+
+#blogPostsArea .carousel__thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 0 -10px;
+}
+
+#blogPostsArea .carousel__slides+.carousel__thumbnails {
+    margin-top: 20px;
+}
+
+#blogPostsArea .carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc((100% / 6) - 20px);
+    margin: 0 10px;
+    transition: all 300ms ease-in-out;
+}
+
+#blogPostsArea .carousel__thumbnails label {
+    display: block;
+    position: relative;
+}
+
+#blogPostsArea .carousel__thumbnails label:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+}
+
+#blogPostsArea .carousel__thumbnails label>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#blogPostsArea .carousel__thumbnails label:hover,
+#blogPostsArea .carousel__thumbnails label:focus {
+    cursor: pointer;
+}
+
+#blogPostsArea .carousel__thumbnails label:hover img,
+#blogPostsArea .carousel__thumbnails label:focus img {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+}
+
+#blogPostsArea .carousel__thumbnails img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Team page here */
+#joinTeamPage {
+    height: 50vmax;
+    width: 98.5vw;
+    /* border: 2px solid black; */
+}
+
+#joinTeamPage>.container {
+    height: 100%;
+    width: 100%;
+}
+
+#joinTeamPage>.container>#joinTeamHeading {
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+
+#joinTeamPage>.container>#joinTeamHeading>.borderJoinTeamHeading {
+    height: 90%;
+    width: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#joinTeamPage>.container>#joinTeamHeading>.borderJoinTeamHeading .headingStyle {
+    font-size: 43px;
+}
+
+#joinTeamPage>.container>#joinTeamCards {
+    height: 80%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+#joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard .card {
+    margin: 2rem;
+    padding: 4rem;
+    width: 50%;
+    height: 85%;
+}
+
+#joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>.card-title {
+    padding-bottom: 2rem;
+}
+
+#joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>a {
+    margin-top: 2rem;
+    padding: 0.8rem 3rem;
+    border: none;
+}
+
+/* Show Off Page Section */
+#showoffPage {
+    height: 45vmax;
+    width: 98.5vw;
+    /* border: 2px solid black; */
+}
+
+/* 1st show off page */
+#showoffPage>#showOffPage1 {
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder {
+    height: 90%;
+    width: 30%;
+    margin: 2rem;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks {
+    /* border: 2px solid red; */
+    height: 85%;
+    width: 75%;
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheivementsElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsIcon {
+    height: 45%;
+    /* border: 2px solid black; */
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsIcon>i {
+    font-size: 5rem;
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsCount {
+    height: 30%;
+    /* border: 2px solid green; */
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsText {
+    height: 25%;
+    /* border: 2px solid saddlebrown; */
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/* 2st show off page */
+#showoffPage>#showOffPage2 {
+    height: 50%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+#showoffPage>#showOffPage2>.ourSponsers {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+#showoffPage>#showOffPage2>.ourSponsers>#sponserHeading {
+    height: 40%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: -3%;
+}
+
+#showoffPage>#showOffPage2>.ourSponsers>#sponsersLogoArea {
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+/* Slider for sponsers */
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+#showoffPage .slider {
+    background: white;
+    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#showoffPage .slider::before,
+#showoffPage .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+#showoffPage .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+#showoffPage .slider::before {
+    left: 0;
+    top: 0;
+}
+
+#showoffPage .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+#showoffPage .slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+/*  FAQ's Page */
+#faqPage {
+    height: 50vmax;
+    width: 100vw;
+    /* border: 2px solid black; */
+}
+
+
+#faqPage>#faqPageInline {
+    height: 100%;
+    width: 100%;
+    background-color: #fafbfd;
+    color: #010101 !important;
+}
+
+#faqPage>#faqPageInline>#faqHeading {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faqcontainer{
+width: 100%;
+max-width: 80rem;
+margin: 0 auto;
+padding: 0 1.5rem;
+}
+.accordion-item {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+.accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #16baa9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+.accordion-link .ion-md-remove {
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms ;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+.accordion-item:target .answer{
+    max-height: 20rem;
+}    
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+.accordion-item:target .accordion-link .ion-md-remove {
+    display: block;
+} 
+
+#faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
+    width: 1.5%;
+    margin-left: -2rem;
+    margin-top: -1.5rem !important;
+}
+
+#faqPage>#faqPageInline>#faqContent {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#faqPage .faqContantBlock {
+    border: 2px solid blue;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6% 2%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#faqPage .gridEleForFaq {
+    display: inline-grid;
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
+}
+
+#faqPage .accordion-button {
+    border: 2px solid rgb(51 211 30 / 19%);
+    border-radius: 2rem;
+}
+
+#faqPage .gridEleForFaq button {
+    background-color: #fff;
+    color: #010101;
+    box-shadow: none;
+}
+
+#faqPage .gridEleForFaq button:active {
+    background-color: #dee9f7;
+}
+
+#faqPage .gridEleForFaq pre {
+    font-size: 1.15rem;
+}
+
+/* Contact US Page */
+#contactUs {
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+#contactUs>#contactSectionText {
+    height: 100%;
+    width: 60%;
+    /* border: 2px solid red; */
+}
+
+#contactUs>#contactSectionText>#contactUsHeading {
+    height: 15%;
+    width: 100%;
+    /* border: 2px solid firebrick; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contactUs>#contactSectionText>#contactUsForm {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+#contactUs>#contactSectionImage {
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactUs>#contactSectionImage>.displayContactUsImage {
+    height: 50%;
+    width: 90%;
+    /* border: 2px solid hotpink; */
+}
+
+#contactUs>#contactSectionImage>.displayContactUsImage>img {
+    height: 100%;
+    width: 100%;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail {
+    height: 80%;
+    width: 85%;
+    /* border: 2px solid pink; */
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail .contactErrorMessage{
+    border: 2px solid red;
+    width: 100%;
+    padding: 7px 15px;
+    margin: 8px 0;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail textarea {
+    height: 15vh;
+    width: 100%;
+    resize: vertical;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail input {
+    font-size: 1.28rem;
+    border: 2px solid grey;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail input:focus {
+    border: 3px solid grey;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#contactUs>#contactSectionText .contactUsFormDetail textarea {
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid grey;
+    font-weight: 500;
+}
+
+/* Footer setion*/
+/* Footer */
+
+#footerSection{
+    width: 100%;
+    height: 125vh;
+    color: #fff;
+}
+
+#footerSection footer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#footerSection footer #footerImg{
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 60%;
+    position: relative;
+    left: 40%;
+    top: 0;
+    background-image: url(https://raw.githubusercontent.com/dev-chouhan/begineerFrontEnd.github.io/main/footerImage01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footerSection footer #footerText{
+    background-color: black;
+    width: 90%;
+    height: 70%;
+    position: relative;
+    top: -30%;
+    overflow: hidden;
+}
+
+.FooterLeftTop{
+    position: absolute;
+    top: 4%;
+    left: 3.5%;
+    height: 55%;
+    width: 37%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid: auto auto / auto auto;
+    line-height: 1.5em;
+}
+
+.FooterLeftTop > span{
+    text-decoration:line-through;
+    color: #fff;
+    
+}
+
+.FooterLeftTop > .FooterCombination{
+    display: flex;
+    /* border: 2px solid green; */
+    flex-direction: column;
+    text-align: left;
+    /* align-items: center; */
+    padding-left: 25%;
+    justify-content: center;
+}
+
+.FooterLeftTop > .Light{
+    color: rgb(128, 128, 128) !important;
+}
+
+.FooterLeftBottom{
+    position: relative;
+    top: 80%;
+    left: 10em;
+    height: 18%;
+    width: 30%;
+    /* border: 2px solid blue; */
+}
+
+.FooterRightTop {
+    /* border: 2px solid pink; */
+    height: 75%;
+    width: 46%;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 5em;
+}
+
+.FooterRightTop .FooterText{
+    border: 2px solid black;
+}
+
+.FooterRightBottom{
+    /* border: 2px solid slateblue; */
+    height: 18%;
+    width: 30%;
+    position: absolute;
+    bottom: -5%;
+    right: 10em;
+}
+
+.FooterLeftBottom, #FooterMain > .FooterRightBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back To Top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/*Responsive section*/
+@media (max-width: 1024px) {
+    #eventPage>#eventArea>#eventContent>#eventContentContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 90%;
+    }
+
+    /* #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
+        margin-top: 0 !important;
+    } */
+
+    .homeImg {
+        margin: 0;
+    }
+
+    #benefitsOfJoiningUs {
+        height: 85vmax;
+    }
+
+    #About-Page {
+        height: 80vmax;
+    }
+
+    #joinTeamPage{
+        height: 80vmax;
+    }
+
+    #footerSection{
+        height: 67vmax;
+    }
+
+    #About-Page .UnderLineForTxt {
+        margin-top: 0rem !important;
+        width: 8%;
+    }
+
+    #joinUsOnPlatforms .UnderLineForTxt {
+        width: 4.5%;
+        margin-top: 0 !important;
+    }
+
+    section.hero .text {
+        font-size: 40px;
+    }
+
+    section.hero .hashtag {
+        font-size: 20px;
+    }
+
+    .headingStyle {
+        font-size: 28px;
+        line-height: 52px;
+    }
+
+    #joinUsOnPlatforms {
+        height: 200vmax;
+    }
+
+    #About-Page>.aboutEle>#aboutImage>.imgContainer>img {
+        height: 30%;
+        margin-top: 6rem;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard .card {
+        padding: 5px;
+    }
+
+    #About-Page #aboutText {
+        width: 75%;
+    }
+
+    #About-Page #aboutImage {
+        width: 25%;
+    }
+
+    .lead {
+        margin-top: 2rem;
+    }
+
+    /* #faqPage {
+        height: 100vmax;
+    }
+
+    #faqPage>#faqPageInline>#faqContent>.faqElements {
+        flex-direction: column;
+    }
+
+    #faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
+        width: 100%;
+        height: 46vh;
+    } */
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard {
+        width: 100%;
+    }
+
+    #contactUs {
+        margin-top: 26vmin;
+    }
+
+    #contactUs>#contactSectionImage>.displayContactUsImage {
+        height: 30%;
+    }
+    /* #faqPage .faqContantBlock {
+        grid-template-columns: 1fr;
+    } */
+}
+
+@media (max-width: 780px) {
+    section.hero .text {
+        font-size: 45px;
+    }
+
+    .col-md-6 {
+        width: 100% !important;
+    }
+
+    .navbar .btn-outline-secondary {
+        height: 3.5rem;
+        width: 12rem;
+        padding: 9px 15px;
+        font-size: 16px;
+        margin: 3px 7px 8px 0;
+        font-weight: 200;
+        color: var(--primary-dark);
+    }
+
+    #footerSection footer #footerImg{
+        width: 0;
+        height: 0;
+    }
+
+    #footerSection footer #footerText{
+        width: 100%;
+        height: 100%;
+        margin-top: 32%;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        margin: auto;
+        list-style: 1;
+        letter-spacing: 0.4rem;
+    }
+
+    #homePage .homeImg {
+        width: 27rem;
+    }
+
+    #About-Page {
+        height: 130vmax;
+    }
+
+    #About-Page #aboutImage {
+        width: 0;
+    }
+
+    #About-Page #aboutText {
+        width: 100%;
+    }
+
+    #About-Page .headingStyle {
+        font-size: 22px;
+    }
+
+    #About-Page img {
+        height: 35% !important;
+    }
+
+    #About-Page .about-heading {
+        width: 25rem;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>.card-title {
+        font-size: 1.3rem;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body p {
+        font-size: 0.7rem;
+    }
+
+    .UnderLineForTxt {
+        margin-top: -0.3rem !important;
+        width: 7%;
+    }
+
+    #joinTeamPage {
+        height: 69vmax;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>a {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+        padding: 0.6rem 1.7rem;
+    }
+
+    #joinUsOnPlatforms i {
+        font-size: 3rem;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
+        height: 82rem;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body>a {
+        padding: 4px 13px;
+    }
+
+    #benefitsOfJoiningUs {
+        height: 100vmax;
+    }
+
+    #benefitsOfJoiningUs .benifitcont {
+        width: 100%;
+    }
+
+    #benefitsOfJoiningUs #benifitImage {
+        width: 0;
+    }
+
+    #teamMembersPage>#teamMembersArea {
+        width: 100%;
+    }
+
+    #eventPage {
+        height: 115vh;
+    }
+
+    #eventPage .UnderLineForTxt {
+        width: 4%;
+        margin-top: -0.2rem !important;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard .card {
+        margin: 1rem;
+    }
+
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsIcon>i {
+        font-size: 3rem;
+    }
+
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsCount {
+        font-size: 1.8rem;
+    }
+
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks>.acheiventsText {
+        font-size: 0.8rem;
+    }
+
+    /* #faqPage {
+        height: 120vmax;
+    }
+
+    #faqPage .faqContantBlock {
+        grid-template-columns: 1fr;
+    } */
+
+    #contactUs {
+        height: 102vmax;
+    }
+}
+
+@media (max-width: 450px) {
+    .UnderLineForTxt {
+        margin-top: -0.5rem !important;
+        width: 6%;
+    }
+
+    /* About Page */
+    #About-Page {
+        margin-top: 7.5rem;
+        height: 115vmax;
+    }
+
+    #About-Page .headingStyle {
+        width: 60%;
+        line-height: 1.6rem;
+    }
+
+    #About-Page .headingStyle .rightShiftOnMobile {
+        margin-left: 18%;
+    }
+
+    #About-Page .headingStyle .incrSizeOnMoblie {
+        font-size: 68px;
+        position: relative;
+        top: 20px;
+    }
+
+    #About-Page .headingStyle .disapearMeOnMoblie {
+        font-size: 0px;
+    }
+
+    #About-Page .UnderLineForTxt {
+        margin-left: 0rem !important;
+        width: 0% !important;
+    }
+
+    #About-Page p {
+        margin: 0 10vw;
+    }
+
+    #About-Page #aboutImage {
+        height: 0;
+        width: 0;
+    }
+
+    /* Join us on other platform */
+    #joinUsOnPlatforms {
+        height: 185vmax;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading {
+        margin-top: 0;
+        margin-bottom: -3rem;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform {
+        height: 100%;
+    }
+
+    #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
+        height: 170rem;
+    }
+
+    /* Benefit of joining us */
+    #benefitsOfJoiningUs {
+        height: 140vmax;
+        margin-top: 175vmax;
+    }
+
+    #benefitsOfJoiningUs .UnderLineForTxt {
+        margin-left: 44% !important;
+        margin-top: -18% !important;
+        width: 9%;
+    }
+
+    #contactUs>#contactSectionImage {
+        width: 0;
+    }
+
+    #contactUs>#contactSectionText {
+        width: 100%;
+    }
+
+
+    /* team members */
+    #teamMembersPage {
+        height: 500vmax;
+    }
+
+    #teamMembersPage>#teamMembersArea .teamMembersHeading {
+        font-size: 2rem;
+    }
+
+    #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+
+    #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
+        width: 85%;
+        margin-bottom: 3vh;
+    }
+
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
+        height: 36%;
+    }
+
+    #teamMembersPage>#teamMembersArea>#coreTeam {
+        margin-top: 20rem;
+    }
+
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards {
+        margin-top: -6rem;
+    }
+
+    /* Blog area */
+    #blogPostsArea .carousel__slide figure {
+        height: 36vh;
+    }
+
+    /* event page */
+    #eventPage {
+        height: 200vh;
+        margin-top: -72vh;
+    }
+
+    #eventPage button {
+        padding: 0.7rem 3.1rem !important;
+        font-size: 0.6rem !important;
+        letter-spacing: 3px;
+    }
+
+    #eventPage>#eventArea>#eventContent>#eventContentContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 100%;
+        width: 70%;
+    }
+
+    #blogPage>#blogArea {
+        height: 110vh;
+    }
+
+    #blogPostsArea .carousel__slide .credit {
+        font-size: 0.5rem;
+    }
+
+    #blogPostsArea .carousel__slide figcaption {
+        font-size: 0.7rem;
+    }
+
+    /* join our team Page */
+    #joinTeamPage>.container>#joinTeamHeading>.borderJoinTeamHeading {
+        width: 100%;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard .card {
+        width: 100%;
+    }
+
+    #joinTeamPage {
+        height: 160vh;
+    }
+
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder {
+        height: 72%;
+    }
+
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder {
+        flex-direction: column;
+    }
+
+    #showoffPage {
+        height: 190vmax;
+    }
+
+    #showoffPage>#showOffPage2>.ourSponsers>#sponsersLogoArea {
+        height: 20%;
+    }
+
+    /* FAQ Page */
+    /* #faqPage {
+        margin-top: -30vh;
+    } */
+
+    /* #faqPage>#faqPageInline>#faqContent>.faqElements {
+        flex-direction: column;
+    }
+
+    #faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
+        width: 100%;
+    } */
+}
+
+@media (max-width: 576px) {
+
+    section.hero,
+    section.setup,
+    section.information {
+        text-align: center;
+    }
+
+    /*Navbar*/
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    /*Hero setion*/
+    section.hero img {
+        padding-top: 2.5rem;
+    }
+
+    section.hero .text {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    /* Footer setion*/
+}
