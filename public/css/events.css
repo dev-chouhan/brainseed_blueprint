@@ -346,3 +346,68 @@ body{
         height: 85%;
     }
 }
+
+@media (max-width: 450px) {
+    #eventsHeader > .events-heading > .event-heading-block > .event-heading-block-element-block > h1{
+        font-size: 5rem;
+    }
+    #eventsHeader > .events-detail > .events-detail-elements{
+        width: 95%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventImage{
+        height: 45%;
+        margin-top: 23%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventCloseHeading .eventType{
+        width: 100%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventCloseHeading .eventHeading{
+        width: 68%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventTimePeriod{
+        font-size: 1rem;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventLocation{
+        font-size: 1rem;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventIntro{
+        font-size: 1.15rem;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventIntro{
+        height: 66%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventLeadOrganizer{
+        font-size: 1rem;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText .eventCollabrators{
+        font-size: 1rem;
+    }
+    #eventsDisplayArea{
+        height: 330vmax;
+    }
+}
+
+@media (max-width: 350px) {
+    #eventsDisplayArea > #events-display-area-container > .upper-display-area > .typeOfEvents > li{
+        font-size: 1rem;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild{
+        flex-direction: column !important;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventImage{
+        width: 100%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild .eventText{
+        width: 100%;
+        margin-top: 7%;
+    }
+    #eventsDisplayArea .eventElements .eventsAreaBorder .eventChild{
+        height: 50rem;
+    }
+    #eventsDisplayArea{
+        height: 480vmax;
+    }
+    #eventsDisplayArea > #events-display-area-container > .upper-display-area{
+        height: 6%;
+    }
+}

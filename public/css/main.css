@@ -627,7 +627,7 @@ section.hero .home-text {
 
 #blogPage {
     /* border: 2px solid black; */
-    height: 100vh;
+    height: 65vmax;
     width: 98.5vw;
 }
 
@@ -1767,11 +1767,13 @@ section.hero .home-text {
 
     /* team members */
     #teamMembersPage {
-        height: 500vmax;
+        height: 470vmax;
+        margin-top: 15%;
     }
 
     #teamMembersPage>#teamMembersArea .teamMembersHeading {
         font-size: 2rem;
+        letter-spacing: 3px;
     }
 
     #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
@@ -1866,6 +1868,37 @@ section.hero .home-text {
         height: 20%;
     }
 
+    #benefitsOfJoiningUs .UnderLineForTxt{
+        margin-top: 0% !important;
+    }
+
+    #footerSection footer #footerText{
+        margin-top: 75%;
+    }
+    .FooterLeftTop{
+        width: 94%;
+        top: 0%;
+        padding: 5% 2%;
+    }
+    .FooterRightTop{
+        top: 40%;
+        right: 27%;
+
+    }
+    .FooterLeftBottom{
+        left: -22%;
+        width: 100%;
+        top: 89%;
+    }
+    .FooterRightBottom{
+        bottom: -15%;
+        width: 100%;
+        right: -52%;
+        bottom: -14.75%;
+    }
+    #faqPage{
+        margin-top: -56vmax;
+    }
     /* FAQ Page */
     /* #faqPage {
         margin-top: -30vh;
@@ -1878,6 +1911,18 @@ section.hero .home-text {
     #faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
         width: 100%;
     } */
+}
+
+@media (max-width: 350px){
+    #footerSection footer #footerText{
+        margin-top: 98%;
+    }
+    #faqPage{
+        margin-top: -58vmax;
+    }
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks{
+        height: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1918,4 +1963,7 @@ section.hero .home-text {
     }
 
     /* Footer setion*/
+    #footerSection{
+        height: 163vmax;
+    }
 }

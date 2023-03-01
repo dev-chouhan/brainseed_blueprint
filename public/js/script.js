@@ -17,12 +17,16 @@ function animateValue(id, start, end, duration) {
     }, stepTime);
 }
 
+var fun = document.getElementById("showoffPage");
+fun.addEventListener("mouseenter", funRun);
 
 //ToDo: count will start from loading of a page, we need to start it when user visits on that element
 // Calling each id elements to show increasing animation of count.
-animateValue("membersCount", 0, 500, 5000);
-animateValue("eventsCount", 0, 250, 5000);
-animateValue("opporCount", 0, 200, 5000);
+function funRun(){
+    animateValue("membersCount", 0, 50, 3000);
+    animateValue("eventsCount", 0, 25, 3000);
+    animateValue("opporCount", 0, 20, 3000);
+};
 
 
 

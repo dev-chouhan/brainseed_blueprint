@@ -14,8 +14,8 @@ function animateValue(id, start, end, duration) {
         }
     }, stepTime);
 }
-animateValue("eventsCount", 0, 250, 5000);
-animateValue("opporCount", 0, 200, 5000);
+animateValue("eventsCount", 0, 10, 3000);
+animateValue("opporCount", 0, 15, 3000);
 
 
 
