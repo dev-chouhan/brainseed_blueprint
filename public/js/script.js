@@ -22,7 +22,7 @@ fun.addEventListener("mouseenter", funRun);
 
 //ToDo: count will start from loading of a page, we need to start it when user visits on that element
 // Calling each id elements to show increasing animation of count.
-function funRun(){
+function funRun() {
     animateValue("membersCount", 0, 50, 3000);
     animateValue("eventsCount", 0, 25, 3000);
     animateValue("opporCount", 0, 20, 3000);
@@ -63,7 +63,7 @@ setTimeout(() => {
 }, 5000);
 
 
- // carousel
+// carousel
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -72,16 +72,16 @@ var swiper = new Swiper(".slide-content", {
     fade: 'true',
     grabCursor: 'true',
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  
-    breakpoints:{
+
+    breakpoints: {
         0: {
             slidesPerView: 1,
         },
@@ -92,5 +92,10 @@ var swiper = new Swiper(".slide-content", {
             slidesPerView: 3,
         },
     },
-  });
-  
+});
+
+// For automatic scrolling carousel
+var caurosulNextBtn = document.getElementById("caurosulNextBtn");
+setInterval(()=>{
+    caurosulNextBtn.click();
+}, 4000);

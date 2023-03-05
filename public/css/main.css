@@ -69,7 +69,10 @@ body {
 }
 
 .joinNavBtn {
-    font-size: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
     border: none;
 }
 
@@ -184,7 +187,7 @@ section.hero .home-text {
     /*** Change height here to decrease or increase size of about container. */
     /* border: 2px solid black; */
     height: 55vmax;
-    width: 98.5vw;
+    width: 100vw;
     background-color: #FAFBFD;
 }
 
@@ -234,14 +237,14 @@ section.hero .home-text {
 /* Join Us on other platforms */
 #joinUsOnPlatforms {
     height: 85vmax;
-    width: 98vw;
+    width: 100vw;
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#joinUsOnPlatforms .UnderLineForTxt{
+#joinUsOnPlatforms .UnderLineForTxt {
     width: 2.3% !important;
 }
 
@@ -300,6 +303,7 @@ section.hero .home-text {
 #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card {
     height: 100%;
     width: 100%;
+    border-radius: 0%;
 }
 
 #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail>.containerJoinPlatforms>.gridItemForJoinPlatform>.card>.card-body {
@@ -368,7 +372,6 @@ section.hero .home-text {
     /* border: 2px solid black; */
     height: 45vmax;
     width: 100%;
-    margin-top: 5%;
     background-color: #FAFBFD;
 }
 
@@ -418,7 +421,7 @@ section.hero .home-text {
 #teamMembersPage>#teamMembersArea {
     /* border: 2px solid red; */
     height: 100%;
-    width: 75%;
+    width: 82%;
     margin: auto;
 }
 
@@ -430,7 +433,7 @@ section.hero .home-text {
 
 #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
     width: 100%;
-    height: 87%;
+    height: 70%;
     /* border: 2px solid red; */
     justify-content: center;
     display: flex;
@@ -465,21 +468,20 @@ section.hero .home-text {
 
 #teamMembersPage>#teamMembersArea>#coreTeam {
     width: 100%;
-    margin-top: 10%;
     height: 55%;
     /* border: 2px solid darkmagenta; */
 }
 
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards {
     width: 100%;
-    height: 80%;
+    height: 82%;
     /* border: 2px solid red; */
 }
 
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
     width: 100%;
     height: 90%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton {
@@ -490,6 +492,13 @@ section.hero .home-text {
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+}
+
+#teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton button {
+    margin-top: -15% !important;
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    font-weight: 300;
 }
 
 #teamMembersPage>#teamMembersArea .teamMembersHeading {
@@ -504,14 +513,23 @@ section.hero .home-text {
     font-weight: 600;
 }
 
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 0px !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 0px !important;
+}
+
 /* Carosuol part in other file namely: carosuol.css */
 
 /* events area here */
 #eventPage {
     /* border: 2px solid black; */
-    margin-top: 10%;
     height: 120vh;
-    width: 98.5vw;
+    width: 100vw;
     background-color: #FAFBFD;
 }
 
@@ -635,7 +653,7 @@ section.hero .home-text {
 #blogPage {
     /* border: 2px solid black; */
     height: 65vmax;
-    width: 98.5vw;
+    width: 100vw;
 }
 
 #blogPage>#blogArea {
@@ -879,7 +897,7 @@ section.hero .home-text {
 /* Team page here */
 #joinTeamPage {
     height: 50vmax;
-    width: 98.5vw;
+    width: 100vw;
     background-color: #FAFBFD;
     /* border: 2px solid black; */
 }
@@ -949,7 +967,7 @@ section.hero .home-text {
 /* Show Off Page Section */
 #showoffPage {
     height: 75vmax;
-    width: 98.5vw;
+    width: 100vw;
     /* border: 2px solid black; */
 }
 
@@ -1037,8 +1055,6 @@ section.hero .home-text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: -3%;
 }
 
 #showoffPage>#showOffPage2>.ourSponsers>#sponsersLogoArea {
@@ -1139,12 +1155,13 @@ section.hero .home-text {
     flex-direction: column;
 }
 
-#faqPage .faqcontainer{
+#faqPage .faqcontainer {
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+
 #faqPage .accordion-item {
     background-color: #ffffff;
     border-radius: 10px;
@@ -1153,9 +1170,10 @@ section.hero .home-text {
     width: 85%;
     margin: auto;
 }
-#faqPage .accordion-link{
+
+#faqPage .accordion-link {
     font-size: 1.6rem;
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
     text-decoration: none;
     background-color: #16baa9;
     width: 100%;
@@ -1164,22 +1182,25 @@ section.hero .home-text {
     justify-content: space-between;
     padding: 1rem 0;
 }
-#faqPage .accordion-link i{
+
+#faqPage .accordion-link i {
     color: #e7d5ff;
     padding: .5rem;
 }
+
 #faqPage .accordion-link .ion-md-remove {
     display: none;
 }
 
-#faqPage .answer{
+#faqPage .answer {
     max-height: 0;
     overflow: hidden;
     position: relative;
     background-color: #212838;
-    transition: max-height 650ms ;
+    transition: max-height 650ms;
 }
-#faqPage .answer::before{
+
+#faqPage .answer::before {
     content: "";
     position: absolute;
     width: .6rem;
@@ -1189,20 +1210,24 @@ section.hero .home-text {
     left: 0;
     transform: translateY(-50%);
 }
-#faqPage .answer p{
-    color: rgba(255,255,255,.6);
+
+#faqPage .answer p {
+    color: rgba(255, 255, 255, .6);
     font-size: 1.4rem;
     padding: 2rem;
 }
-#faqPage .accordion-item:target .answer{
+
+#faqPage .accordion-item:target .answer {
     max-height: 20rem;
-}    
-#faqPage .accordion-item:target .accordion-link .ion-md-add{
+}
+
+#faqPage .accordion-item:target .accordion-link .ion-md-add {
     display: none;
 }
+
 #faqPage .accordion-item:target .accordion-link .ion-md-remove {
     display: block;
-} 
+}
 
 #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
     width: 1.5%;
@@ -1216,14 +1241,14 @@ section.hero .home-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #faqPage .faqContantBlock {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1239,7 +1264,7 @@ section.hero .home-text {
     display: inline-grid;
     height: 100%;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 4px 7px -2px rgba(0, 0, 0, 0.75);
@@ -1253,13 +1278,13 @@ section.hero .home-text {
     letter-spacing: 2px;
 }
 
-#faqPage .accordion-button:active{
+#faqPage .accordion-button:active {
     /* background-color: #f2fff0; */
     color: #010101;
     font-weight: 800;
 }
 
-#faqPage .accordion-body{
+#faqPage .accordion-body {
     letter-spacing: 2px;
     line-height: 2;
 }
@@ -1377,13 +1402,13 @@ section.hero .home-text {
     font-weight: 500;
 }
 
-#textareaId{
+#textareaId {
     padding: 8px;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-::placeholder{
+::placeholder {
     color: #777;
 }
 
@@ -1425,16 +1450,41 @@ section.hero .home-text {
     overflow: hidden;
 }
 
+#footerSection footer #footerText p {
+    line-height: 1;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
 .FooterLeftTop {
     position: absolute;
     top: 16%;
-    left: 3.5%;
+    left: 8%;
     height: 55%;
     width: 37%;
-    border: 2px solid red;
-    display: grid;
-    grid: auto auto / auto auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
     line-height: 1.5em;
+}
+
+.FooterLeftTop p {
+    padding: 6% 3%;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.FooterLeftTop nav {
+    position: relative;
+
+}
+
+.FooterLeftTop li a {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 
@@ -1497,6 +1547,10 @@ section.hero .home-text {
         height: 90%;
     }
 
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton button {
+        margin-top: 0% !important;
+    }
+
     .homeImg {
         margin: 0;
     }
@@ -1543,6 +1597,10 @@ section.hero .home-text {
 
     #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard .card {
         padding: 5px;
+    }
+
+    #teamMembersPage {
+        height: 120vmax;
     }
 
     #About-Page #aboutText {
@@ -1594,6 +1652,45 @@ section.hero .home-text {
 
     .col-md-6 {
         width: 100% !important;
+    }
+
+    #footerSection footer #footerText p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .FooterLeftTop {
+        left: 4%;
+        width: 40%;
+    }
+
+    .FooterLeftTop li a {
+        font-weight: 300;
+    }
+
+    .FooterLeftTop nav {
+        width: 75%;
+    }
+
+    .FooterRightTop {
+        width: 54%;
+    }
+
+    #teamMembersPage {
+        height: 153vmax;
+    }
+
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
+        width: 85%;
+        margin: auto;
+    }
+
+    .slide-content {
+        margin: 0 45px;
+    }
+
+    .swiper-navBtn {
+        display: none;
     }
 
     .navbar .btn-outline-secondary {
@@ -1675,7 +1772,7 @@ section.hero .home-text {
         width: 7%;
     }
 
-    #blogPage{
+    #blogPage {
         height: 80vmax;
     }
 
@@ -1751,12 +1848,12 @@ section.hero .home-text {
         font-size: 0.8rem;
     }
 
-    #faqPage{
+    #faqPage {
         height: 70vmax;
     }
 
 
-    #faqPage #accordionExample{
+    #faqPage #accordionExample {
         margin-top: 5%;
     }
 
@@ -1788,7 +1885,7 @@ section.hero .home-text {
         margin-left: 20%;
     }
 
-    #About-Page .UnderLineForTxt{
+    #About-Page .UnderLineForTxt {
         margin-left: -0.5rem !important;
         margin-top: -0.5rem !important;
     }
@@ -1848,19 +1945,19 @@ section.hero .home-text {
         width: 9%;
     }
 
-    #benefitsOfJoiningUs .headingStyle span:nth-child(1){
+    #benefitsOfJoiningUs .headingStyle span:nth-child(1) {
         margin-left: -5%;
     }
 
-    #benefitsOfJoiningUs .headingStyle span:nth-child(2){
+    #benefitsOfJoiningUs .headingStyle span:nth-child(2) {
         margin-left: 5%;
     }
 
-    #benefitsOfJoiningUs .headingStyle span:nth-child(3){
+    #benefitsOfJoiningUs .headingStyle span:nth-child(3) {
         margin-left: 5%;
     }
 
-    #benefitsOfJoiningUs .headingStyle{
+    #benefitsOfJoiningUs .headingStyle {
         margin-left: 10%;
     }
 
@@ -1875,26 +1972,31 @@ section.hero .home-text {
 
     /* team members */
     #teamMembersPage {
-        height: 470vmax;
+        height: 485vmax;
         margin-top: 15%;
     }
 
-    #teamMembersPage .headingStyle{
+    #teamMembersPage .headingStyle {
         font-size: 32px;
         margin: 4% 50%;
     }
 
-    #teamMembersPage .headingStyle span:nth-child(1){
+    #teamMembersPage .headingStyle span:nth-child(1) {
         margin-left: -5%;
     }
 
-    #teamMembersPage .headingStyle span:nth-child(2){
+    #teamMembersPage .headingStyle span:nth-child(2) {
         margin-left: 5%;
+    }
+
+    #teamMembersPage>#teamMembersArea .teamMembersHeading1 {
+        padding-bottom: 66%;
     }
 
     #teamMembersPage>#teamMembersArea .teamMembersHeading {
         font-size: 2rem;
         letter-spacing: 3px;
+        margin-top: 27%;
     }
 
     #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
@@ -1911,10 +2013,6 @@ section.hero .home-text {
         height: 36%;
     }
 
-    #teamMembersPage>#teamMembersArea>#coreTeam {
-        margin-top: 20rem;
-    }
-
     #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards {
         margin-top: -6rem;
     }
@@ -1925,17 +2023,18 @@ section.hero .home-text {
     }
 
     /* faq page */
-    #faqPage{
-        height: 125vmax;
+    #faqPage {
+        height: 165vmax;
     }
-    #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt{
+
+    #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
         width: 4%;
     }
 
     /* event page */
     #eventPage {
-        height: 200vh;
-        margin-top: -72vh;
+        height: 200vmax;
+        margin-top: -110vmax;
     }
 
     #eventPage button {
@@ -1997,74 +2096,119 @@ section.hero .home-text {
         height: 20%;
     }
 
-    #benefitsOfJoiningUs .UnderLineForTxt{
+    #benefitsOfJoiningUs .UnderLineForTxt {
         margin-top: 0% !important;
     }
 
-    #footerSection footer #footerText{
-        margin-top: 75%;
+    #footerSection footer #footerText {
+        margin-top: 81%;
     }
-    .FooterLeftTop{
+
+    .FooterLeftTop {
         width: 94%;
         top: 0%;
-        padding: 5% 2%;
+        padding: 27% 2%;
     }
-    .FooterRightTop{
+
+    .FooterLeftTop h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+    #footerSection footer #footerText p{
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .FooterLeftTop nav{
+        width: 100%;
+        line-height: 2;
+    }
+
+    .FooterRightTop {
         top: 60%;
-        right: -13%;
+        right: -18%;
         height: 31%;
         width: 126%;
     }
-    .FooterRightTop .FooterText{
+
+    .FooterRightTop .FooterText {
         height: 100%;
         width: 100%;
     }
-    .FooterRightTop .FooterText iframe{
-        width: 100%;
-        height: 100%;
+
+    .FooterRightTop .FooterText iframe {
+        width: 90%;
+        height: 80%;
     }
-    .FooterLeftBottom{
+
+    .FooterLeftBottom {
         left: -22%;
         width: 100%;
         top: 89%;
     }
-    .FooterRightBottom{
+
+    .FooterRightBottom {
         bottom: -15%;
         width: 100%;
         right: -52%;
         bottom: -15.15%;
     }
-    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body p{
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body p {
         font-size: 1.2rem;
     }
-    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>.card-title{
+
+    #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>.card-title {
         font-size: 1.8rem;
         font-weight: 700;
     }
-    #benefitsOfJoiningUs .text2{
+
+    #benefitsOfJoiningUs .text2 {
         line-height: 1.4;
     }
-    #faqPage{
+
+    #faqPage {
         margin-top: -56vmax;
     }
+
     /* footer section */
-    #footerSection{
+    #footerSection {
         height: 180vmax;
     }
 }
 
-@media (max-width: 350px){
-    #footerSection footer #footerText{
+@media (max-width: 360px) {
+    #footerSection footer #footerText {
         margin-top: 98%;
     }
-    #faqPage{
+
+    #faqPage {
         margin-top: -58vmax;
     }
-    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks{
+
+    #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks {
         height: 100%;
     }
-    #faqPage{
+
+    #faqPage {
         height: 150vmax;
+    }
+
+    #footerSection footer #footerText {
+        margin-top: 111%;
+    }
+    .FooterRightTop{
+        top: 73%;
+    }
+    .FooterRightTop .FooterText iframe{
+        height: 50%;
+    }
+    .iconsHere i{
+        font-size: 1.7rem !important;
+    }
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul{
+        width: 100%;
     }
 }
 
@@ -2106,7 +2250,7 @@ section.hero .home-text {
     }
 
     /* Footer setion*/
-    #footerSection{
+    #footerSection {
         height: 180vmax;
     }
 }
@@ -2114,40 +2258,46 @@ section.hero .home-text {
 
 /* carousel */
 
-.coreMembersCarosoul{
+.coreMembersCarosoul {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #EFEFEF;
-  }
-  .slide-container{
+}
+
+.slide-container {
     max-width: 1120px;
     width: 100%;
     padding: 40px 0;
-  }
-  .slide-content{
-    margin: 0 40px;
+}
+
+.slide-content {
+    margin: 0 40px 30px;
     overflow: hidden;
     border-radius: 25px;
-  }
-  .card{
+}
+
+.card {
     border-radius: 25px;
     background-color: #FFF;
-  }
-  .image-content,
-  .card-content{
+}
+
+.image-content,
+.card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
-  }
-  .image-content{
+}
+
+.image-content {
     position: relative;
     row-gap: 5px;
     padding: 25px 0;
-  }
-  .overlay{
+}
+
+.overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -2155,9 +2305,10 @@ section.hero .home-text {
     width: 100%;
     background-color: var(--primary-dark);
     border-radius: 25px 25px 0 25px;
-  }
-  .overlay::before,
-  .overlay::after{
+}
+
+.overlay::before,
+.overlay::after {
     content: '';
     position: absolute;
     right: 0;
@@ -2165,37 +2316,43 @@ section.hero .home-text {
     height: 40px;
     width: 40px;
     background-color: var(--primary-dark);
-  }
-  .overlay::after{
+}
+
+.overlay::after {
     border-radius: 0 25px 0 0;
     background-color: #FFF;
-  }
-  .card-image{
+}
+
+.card-image {
     position: relative;
     height: 150px;
     width: 150px;
     border-radius: 50%;
     background: #FFF;
     padding: 3px;
-  }
-  .card-image .card-img{
+}
+
+.card-image .card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--primary-light);
-  }
-  .name{
+}
+
+.name {
     font-size: 18px;
     font-weight: 500;
     color: #333;
-  }
-  .description{
+}
+
+.description {
     font-size: 14px;
     color: #707070;
     text-align: center;
-  }
-  .button{
+}
+
+.button {
     border: none;
     font-size: 16px;
     color: #FFF;
@@ -2205,43 +2362,61 @@ section.hero .home-text {
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  .button:hover{
+}
+
+.button:hover {
     background: var(--primary-dark);
-  }
-  
-  .swiper-navBtn{
+}
+
+.swiper-navBtn {
     color: #6E93f7;
     transition: color 0.3s ease;
-  }
-  .swiper-navBtn:hover{
+}
+
+.swiper-navBtn:hover {
     color: var(--primary-dark);
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after{
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
     font-size: 35px;
-  }
-  .swiper-button-next{
+}
+
+.swiper-button-next {
     right: 0;
-  }
-  .swiper-button-prev{
+}
+
+.swiper-button-prev {
     left: 0;
-  }
-  .swiper-pagination-bullet{
+}
+
+.swiper-pagination-bullet {
     background-color: var(--primary-light);
     opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
+}
+
+.swiper-pagination-bullet-active {
     background-color: var(--primary-dark);
-  }
-  
-  @media screen and (max-width: 768px) {
-    .slide-content{
-      margin: 0 10px;
-    }
-    .swiper-navBtn{
-      display: none;
-    }
-  }
-  
-  /* carousel ends*/
+}
+
+
+/* carousel ends*/
+
+.iconsHere {
+    /* border: 2px solid red; */
+    height: 3rem;
+    position: relative;
+    width: 40%;
+    z-index: 10;
+    left: 23%;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconsHere i {
+    font-size: 2.3rem;
+    color: #fff;
+    cursor: pointer;
+}
