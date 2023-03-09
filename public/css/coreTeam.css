@@ -8,22 +8,17 @@
 }
 
 #coreTeam{
-    height: 140vmax;
+    height: 400vmax;
     width: 100%;
     /* border: 2px solid red; */
     background-color: #ffffff;
 }
 
 #leadTeam{
-    height: 40%;
+    height: 15%;
     width: 100%;
     /* border: 2px solid black; */
-}
-
-#wholeTeam{
-    height: 60%;
-    width: 100%;
-    border: 2px solid saddlebrown;
+    background-color: #fbfffb;
 }
 
 #leadTeam  .leadTeamBorder{
@@ -48,7 +43,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5% 5%;
+    gap: 2% 2%;
     grid-auto-flow: row;
     justify-content: center;
     align-content: center;
@@ -71,4 +66,75 @@
     padding: 2% 7%;
     font-weight: 300;
     font-size: 3.5rem;
+    text-decoration: 1px underline;
+}
+
+#wholeTeam{
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid saddlebrown; */
+}
+
+#wholeTeam > h1{
+    letter-spacing: 2px;
+    padding: 2% 7%;
+    font-weight: 300;
+    font-size: 3.5rem;
+    height: 2%;
+    width: 100%;
+    text-decoration: 1px underline;
+}
+
+#wholeTeam #wholeTeamBorder{
+    margin: auto;
+    height: 98%;
+    width: 90%;
+    /* border: 2px solid rebeccapurple; */
+}
+
+#wholeTeam .team{
+    height: 16.6%;
+    width: 95%;
+    /* border: 2px solid black; */
+    margin: 2% auto;
+    padding: 2% 4%;
+}
+
+#wholeTeam .team:nth-of-type(odd){
+    background-color: rgb(251, 251, 251);
+}
+
+#wholeTeam .team h1{
+    height: 10%;
+    width: 100%;
+    /* border: 2px solid red; */
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+#wholeTeam .team .teamCardsHere{
+    height: 90%;
+    width: 95%;
+    margin: auto;
+    /* border: 2px solid firebrick; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2% 2%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#wholeTeam .team .teamCardsHere .teamCard{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
