@@ -2209,9 +2209,7 @@ section.hero .home-text {
     .FooterRightTop .FooterText iframe{
         height: 50%;
     }
-    .iconsHere i{
-        font-size: 1.7rem !important;
-    }
+    
     #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul{
         width: 100%;
     }
@@ -2233,7 +2231,9 @@ section.hero .home-text {
     .nav-link {
         margin-left: 0;
     }
-
+    .iconsHere i{
+        font-size: 1.7rem !important;
+    }
     /*Hero setion*/
     section.hero img {
         padding-top: 2.5rem;
