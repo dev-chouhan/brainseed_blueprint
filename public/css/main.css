@@ -491,7 +491,7 @@ section.hero .home-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: -2rem;
 }
 
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton button {
@@ -511,6 +511,7 @@ section.hero .home-text {
     align-items: center;
     font-size: 3rem;
     font-weight: 600;
+    margin-bottom: 3%;
 }
 
 .swiper-button-next,
@@ -523,12 +524,10 @@ section.hero .home-text {
     left: 0px !important;
 }
 
-/* Carosuol part in other file namely: carosuol.css */
-
 /* events area here */
 #eventPage {
     /* border: 2px solid black; */
-    height: 135vmax;
+    height: 70vmax;
     width: 100vw;
     background-color: #FAFBFD;
 }
@@ -651,7 +650,7 @@ section.hero .home-text {
 /* Blog area here */
 
 #blogPage {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 65vmax;
     width: 100vw;
 }
@@ -896,7 +895,7 @@ section.hero .home-text {
 
 /* Team page here */
 #joinTeamPage {
-    height: 80vmax;
+    height: 60vmax;
     width: 100vw;
     background-color: #FAFBFD;
     /* border: 2px solid black; */
@@ -1133,7 +1132,7 @@ section.hero .home-text {
 
 /*  FAQ's Page */
 #faqPage {
-    height: 50vmax;
+    height: 60vmax;
     width: 100vw;
     /* border: 2px solid black; */
 }
@@ -1547,6 +1546,10 @@ section.hero .home-text {
         height: 90%;
     }
 
+    /* #eventPage{
+        height: 100vmax;
+    } */
+
     #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton button {
         margin-top: 0% !important;
     }
@@ -1882,11 +1885,10 @@ section.hero .home-text {
         width: 70%;
         line-height: 2.3rem;
         position: relative;
-        left: 10%;
     }
 
     #About-Page .headingStyle .rightShiftOnMobile {
-        margin-left: 20%;
+        margin-left: 28%;
     }
 
     #About-Page .UnderLineForTxt {
@@ -1940,7 +1942,7 @@ section.hero .home-text {
     /* Benefit of joining us */
     #benefitsOfJoiningUs {
         height: 155vmax;
-        margin-top: 180vmax;
+        margin-top: 160vmax;
     }
 
     #benefitsOfJoiningUs .UnderLineForTxt {
@@ -2105,7 +2107,7 @@ section.hero .home-text {
     }
 
     #footerSection footer #footerText {
-        margin-top: 118%;
+        margin-top: 80%;
     }
 
     .FooterLeftTop {
@@ -2179,7 +2181,7 @@ section.hero .home-text {
 
     /* footer section */
     #footerSection {
-        height: 180vmax;
+        height: 130vmax;
     }
 }
 
@@ -2190,14 +2192,11 @@ section.hero .home-text {
 
     #faqPage {
         margin-top: -58vmax;
+        height: 160vmax;
     }
 
     #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks {
         height: 100%;
-    }
-
-    #faqPage {
-        height: 150vmax;
     }
 
     #footerSection footer #footerText {
@@ -2207,7 +2206,7 @@ section.hero .home-text {
         top: 73%;
     }
     .FooterRightTop .FooterText iframe{
-        height: 50%;
+        height: 70%;
     }
     
     #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul{
@@ -2255,8 +2254,8 @@ section.hero .home-text {
     }
 
     /* Footer setion*/
-    #footerSection {
-        height: 180vmax;
+    #footerSection footer #footerText{
+        margin-top: 80%;
     }
 }
 
