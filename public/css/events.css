@@ -45,7 +45,7 @@ body{
 #eventsHeader > .events-heading > .event-heading-block > .event-heading-block-element-block{
     /* border: 2px solid red; */
     height: 50%;
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
