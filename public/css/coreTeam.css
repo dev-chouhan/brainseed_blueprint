@@ -201,6 +201,17 @@ footer p span {
     #eventsHeader {
         height: 45vmax !important;
     }
+    /* Cards */
+    #coreTeam .cardArea .textHere p:nth-child(1){
+        font-size: 1.4rem !important;
+    }
+    #coreTeam .cardArea .textHere p{
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+    }
+    #coreTeam .cardArea .textHere p:nth-last-child(1){
+        font-size: 0.6rem !important;
+    }
 }
 
 @media (max-width: 450px) {
@@ -268,4 +279,68 @@ footer p span {
         padding: 10px;
         font-size: 12px;
     }
+
+    #coreTeam .cardArea .textHere p:nth-child(1){
+        font-size: 1rem !important;
+    }
+    #coreTeam .cardArea .textHere p{
+        font-size: 0.8rem !important;
+        line-height: 1 !important;
+    }
+    #coreTeam .cardArea .textHere p:nth-last-child(1){
+        font-size: 0.55rem !important;
+    }
+}
+
+/* Cards */
+
+#coreTeam .cardArea{
+    height: 100%;
+    width: 100%;
+}
+
+#coreTeam .cardArea .imgHere{
+    height: 70%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+#coreTeam .cardArea .imgHere img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+#coreTeam .cardArea .imgHere img:hover{
+    filter: grayscale(1);
+}
+
+#coreTeam .cardArea .textHere{
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#coreTeam .cardArea .textHere p:nth-child(1){
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+#coreTeam .cardArea .textHere p{
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 2;
+}
+
+#coreTeam .cardArea .textHere p:nth-last-child(1){
+    padding: 0 10%;
+    font-size: 1rem;
+    font-weight: 300;
 }
