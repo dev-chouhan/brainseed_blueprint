@@ -99,3 +99,21 @@ var caurosulNextBtn = document.getElementById("caurosulNextBtn");
 setInterval(()=>{
     caurosulNextBtn.click();
 }, 4000);
+
+
+// Scrolling animation for whole website
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show001');
+        } else {
+            entry.target.classList.remove('show001');
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden001');
+hiddenElements.forEach((el) => observer.observe(el));
+

@@ -51,13 +51,14 @@
 }
 
 #leadTeam .leadTeamBorder .content .contentElement {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 34vmax;
     width: 100%;
+    margin-bottom: 5rem;
 }
 
 #leadTeam .leadTeamBorder .heading h1 {
@@ -129,7 +130,7 @@
 }
 
 #wholeTeam .team .teamCardsHere .teamCard {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -409,4 +410,36 @@ footer p span {
 .fa-instagram:hover,
 .fa-google-plus-square:hover{
     color: #45e19f;
+}
+
+
+/* Animations */
+
+.hidden001{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.cardArea:nth-child(2){
+    transition-delay: 200ms;
+}
+.cardArea:nth-child(3){
+    transition-delay: 400ms;
+}
+.cardArea:nth-child(4){
+    transition-delay: 600ms;
+}
+.cardArea:nth-child(5){
+    transition-delay: 800ms;
+}
+.cardArea:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+.show001{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

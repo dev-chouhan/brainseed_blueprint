@@ -2434,3 +2434,85 @@ section.hero .home-text {
     color: #fff;
     cursor: pointer;
 }
+
+/* Animations */
+
+.hidden001{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show001{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden001{
+        transition: none;
+    }
+}
+
+#homePage .homeImg{
+    transition-delay: 200ms;
+}
+
+#About-Page #aboutText{
+    transition-delay: 200ms;
+}
+
+.headingStyle{
+    transition-delay: 300ms;
+}
+
+.founderMembersCards .number2{
+    transition-delay: 200ms;
+}
+.founderMembersCards .number3{
+    transition-delay: 400ms;
+}
+
+#joinUsOnPlatforms .jp2{
+    transition-delay: 200ms;
+}
+#joinUsOnPlatforms .jp3{
+    transition-delay: 400ms;
+}
+#joinUsOnPlatforms .jp4{
+    transition-delay: 600ms;
+}
+#joinUsOnPlatforms .jp5{
+    transition-delay: 800ms;
+}
+#joinUsOnPlatforms .jp6{
+    transition-delay: 1000ms;
+}
+
+#eventPage .number2{
+    transition-delay: 200ms;
+}
+#eventPage .number3{
+    transition-delay: 400ms;
+}
+#eventPage .number4{
+    transition-delay: 600ms;
+}
+#eventPage .number5{
+    transition-delay: 800ms;
+}
+#eventPage .number6{
+    transition-delay: 1000ms;
+}
+
+#faqPage .number2{
+    transition-delay: 200ms;
+}
+#faqPage .number3{
+    transition-delay: 400ms;
+}
+#faqPage .number4{
+    transition-delay: 600ms;
+}
