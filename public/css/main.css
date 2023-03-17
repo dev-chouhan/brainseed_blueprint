@@ -443,6 +443,16 @@ section.hero .home-text {
 #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
     margin: 0 2rem;
     width: 30%;
+    overflow: hidden;
+}
+
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card img{
+    transition: all 0.5s ease-in-out;
+}
+
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card img:hover{
+    transform: scale(1.15);
 }
 
 #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card>.card-body {
