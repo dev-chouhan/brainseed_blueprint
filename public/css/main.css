@@ -186,7 +186,8 @@ section.hero .home-text {
 #About-Page {
     /*** Change height here to decrease or increase size of about container. */
     /* border: 2px solid black; */
-    height: 55vmax;
+    /* height: 55vmax; */
+    padding: 8rem 1rem;
     width: 100vw;
     background-color: #FAFBFD;
 }
@@ -236,8 +237,9 @@ section.hero .home-text {
 
 /* Join Us on other platforms */
 #joinUsOnPlatforms {
-    height: 85vmax;
+    /* height: 85vmax; */
     width: 100vw;
+    padding: 2rem 0.5rem;
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -370,7 +372,8 @@ section.hero .home-text {
 /* Benefits of joinig Us */
 #benefitsOfJoiningUs {
     /* border: 2px solid black; */
-    height: 60vmax;
+    /* height: 60vmax; */
+    padding: 2rem 0.5rem;
     width: 100%;
     background-color: #FAFBFD;
 }
@@ -414,8 +417,9 @@ section.hero .home-text {
 /* Team Members page */
 #teamMembersPage {
     /* border: 2px solid black; */
-    height: 100vmax;
-    width: 98.5vw;
+    /* height: 100vmax; */
+    padding: 4rem 1rem;
+    /* width: 98.5vw; */
 }
 
 #teamMembersPage>#teamMembersArea {
@@ -501,11 +505,9 @@ section.hero .home-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -2rem;
 }
 
 #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton button {
-    margin-top: -15% !important;
     padding: 10px 0px;
     font-size: 1.3rem;
     font-weight: 300;
@@ -514,7 +516,7 @@ section.hero .home-text {
 #teamMembersPage>#teamMembersArea .teamMembersHeading {
     /* border: 2px solid black; */
     width: 100%;
-    height: 20%;
+    height: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -537,7 +539,7 @@ section.hero .home-text {
 /* events area here */
 #eventPage {
     /* border: 2px solid black; */
-    height: 70vmax;
+    /* height: 70vmax; */
     width: 100vw;
     background-color: #FAFBFD;
 }
@@ -565,7 +567,11 @@ section.hero .home-text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 5.5rem 1rem;
+}
+
+#eventPage>#eventArea #eventContentButton{
+    margin-top: 4rem;
 }
 
 #eventPage>#eventArea>#eventContent>#eventContentContainer {
@@ -584,7 +590,7 @@ section.hero .home-text {
 
 #eventPage>#eventArea>#eventContent>#eventContentContainer>.eventGrid-item {
     display: inline-grid;
-    height: 100%;
+    height: 20rem;
     width: 100%;
 }
 
@@ -661,7 +667,7 @@ section.hero .home-text {
 
 #blogPage {
     /* border: 2px solid black; */
-    height: 65vmax;
+    /* height: 65vmax; */
     width: 100vw;
 }
 
@@ -905,7 +911,7 @@ section.hero .home-text {
 
 /* Team page here */
 #joinTeamPage {
-    height: 60vmax;
+    /* height: 60vmax; */
     width: 100vw;
     background-color: #FAFBFD;
     /* border: 2px solid black; */
@@ -973,17 +979,164 @@ section.hero .home-text {
     border: none;
 }
 
+/* carousel */
+
+.coreMembersCarosoul {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px 30px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-dark);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-dark);
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-light);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: var(--primary-light);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: var(--primary-dark);
+}
+
+.swiper-navBtn {
+    color: #6E93f7;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: var(--primary-dark);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-light);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-dark);
+}
+/* carousel ends*/
+
+
 /* Show Off Page Section */
 #showoffPage {
-    height: 75vmax;
+    /* height: 75vmax; */
     width: 100vw;
     /* border: 2px solid black; */
+    padding: 4rem 1rem;
 }
 
 /* 1st show off page */
 #showoffPage>#showOffPage1 {
     height: 30%;
     width: 100%;
+    padding: 5rem 0rem;
     /* border: 2px solid red; */
 }
 
@@ -1047,6 +1200,7 @@ section.hero .home-text {
 #showoffPage>#showOffPage2 {
     height: 50%;
     width: 100%;
+    padding: 5rem 0rem;
     /* border: 2px solid blue; */
 }
 
@@ -1142,7 +1296,7 @@ section.hero .home-text {
 
 /*  FAQ's Page */
 #faqPage {
-    height: 60vmax;
+    /* height: 60vmax; */
     width: 100vw;
     /* border: 2px solid black; */
 }
@@ -1314,10 +1468,11 @@ section.hero .home-text {
 
 /* Contact US Page */
 #contactUs {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     /* border: 2px solid black; */
     display: flex;
+    padding: 5rem 0.5rem;
 }
 
 #contactUs>#contactSectionText {
@@ -1556,24 +1711,8 @@ section.hero .home-text {
         height: 90%;
     }
 
-    /* #eventPage{
-        height: 100vmax;
-    } */
-
-    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton button {
-        margin-top: 0% !important;
-    }
-
     .homeImg {
         margin: 0;
-    }
-
-    #benefitsOfJoiningUs {
-        height: 85vmax;
-    }
-
-    #About-Page {
-        height: 120vmax;
     }
 
     #About-Page .UnderLineForTxt {
@@ -1603,10 +1742,6 @@ section.hero .home-text {
         line-height: 52px;
     }
 
-    #joinUsOnPlatforms {
-        height: 150vmax;
-    }
-
     #About-Page>.aboutEle>#aboutImage>.imgContainer>img {
         height: 30%;
         margin-top: 6rem;
@@ -1616,9 +1751,6 @@ section.hero .home-text {
         padding: 5px;
     }
 
-    #teamMembersPage {
-        height: 135vmax;
-    }
 
     #About-Page #aboutText {
         width: 75%;
@@ -1632,34 +1764,13 @@ section.hero .home-text {
         margin-top: 2rem;
     }
 
-    /* #faqPage {
-        height: 100vmax;
-    }
-
-    #faqPage>#faqPageInline>#faqContent>.faqElements {
-        flex-direction: column;
-    }
-
-    #faqPage>#faqPageInline>#faqContent>.faqElements>.faqEle {
-        width: 100%;
-        height: 46vh;
-    } */
-
     #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard {
         width: 100%;
-    }
-
-    #contactUs {
-        margin-top: 26vmin;
     }
 
     #contactUs>#contactSectionImage>.displayContactUsImage {
         height: 30%;
     }
-
-    /* #faqPage .faqContantBlock {
-        grid-template-columns: 1fr;
-    } */
 }
 
 @media (max-width: 780px) {
@@ -1693,18 +1804,11 @@ section.hero .home-text {
         width: 35%;
     }
 
-    #teamMembersPage {
-        height: 180vmax;
-    }
-
     #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
         width: 85%;
         margin: auto;
     }
 
-    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMemberButton{
-        margin-top: -1rem;
-    }
     
     .slide-content {
         margin: 0 45px;
@@ -1756,10 +1860,6 @@ section.hero .home-text {
         width: 27rem;
     }
 
-    #About-Page {
-        height: 130vmax;
-    }
-
     #About-Page #aboutImage {
         width: 0;
     }
@@ -1793,14 +1893,6 @@ section.hero .home-text {
         width: 7%;
     }
 
-    #blogPage {
-        height: 80vmax;
-    }
-
-    #joinTeamPage {
-        height: 60vmax;
-    }
-
     #joinTeamPage>.container>#joinTeamCards>.borderJoinTeamCard>.card>.card-body>a {
         font-size: 0.7rem;
         margin-top: 0.5rem;
@@ -1824,11 +1916,6 @@ section.hero .home-text {
         padding: 4px 13px;
     }
 
-    #benefitsOfJoiningUs {
-        height: 100vmax;
-        margin-top: 50%;
-    }
-
     #benefitsOfJoiningUs .benifitcont {
         width: 100%;
     }
@@ -1839,10 +1926,6 @@ section.hero .home-text {
 
     #teamMembersPage>#teamMembersArea {
         width: 100%;
-    }
-
-    #eventPage {
-        height: 115vh;
     }
 
     #eventPage .UnderLineForTxt {
@@ -1866,17 +1949,54 @@ section.hero .home-text {
         font-size: 0.8rem;
     }
 
-    #faqPage {
-        height: 130vmax;
-    }
-
-
     #faqPage #accordionExample {
         margin-top: 5%;
     }
+}
 
-    #contactUs {
-        height: 102vmax;
+
+@media (max-width: 576px) {
+
+    section.hero,
+    section.setup,
+    section.information {
+        text-align: center;
+    }
+
+    /*Navbar*/
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+    .iconsHere i{
+        font-size: 1.7rem !important;
+    }
+    /*Hero setion*/
+    section.hero img {
+        padding-top: 2.5rem;
+    }
+
+    section.hero .text {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    /* Footer setion*/
+    #footerSection footer #footerText{
+        margin-top: 80%;
     }
 }
 
@@ -1884,11 +2004,6 @@ section.hero .home-text {
     .UnderLineForTxt {
         margin-top: -0.5rem !important;
         width: 6%;
-    }
-
-    /* About Page */
-    #About-Page {
-        height: 135vmax;
     }
 
     #About-Page .headingStyle {
@@ -1925,11 +2040,6 @@ section.hero .home-text {
         width: 0;
     }
 
-    /* Join us on other platform */
-    #joinUsOnPlatforms {
-        height: 185vmax;
-    }
-
     #joinUsOnPlatforms>#joinPlatforms>.joinPlatformHeading {
         margin-top: 0;
         margin-bottom: -3rem;
@@ -1947,12 +2057,6 @@ section.hero .home-text {
 
     #joinUsOnPlatforms>#joinPlatforms>#joinPlatformsDetail {
         height: 170rem;
-    }
-
-    /* Benefit of joining us */
-    #benefitsOfJoiningUs {
-        height: 155vmax;
-        margin-top: 160vmax;
     }
 
     #benefitsOfJoiningUs .UnderLineForTxt {
@@ -1985,13 +2089,6 @@ section.hero .home-text {
         width: 100%;
     }
 
-
-    /* team members */
-    #teamMembersPage {
-        height: 430vmax;
-        margin-top: 15%;
-    }
-
     #teamMembersPage .headingStyle {
         font-size: 32px;
         margin: 4% 50%;
@@ -2005,15 +2102,12 @@ section.hero .home-text {
         margin-left: 5%;
     }
 
-    #teamMembersPage>#teamMembersArea .teamMembersHeading1 {
-        padding-bottom: 66%;
-    }
-
     #teamMembersPage>#teamMembersArea .teamMembersHeading {
         font-size: 2rem;
         letter-spacing: 3px;
-        margin-top: 27%;
+        padding: 9rem 0 14rem;
     }
+    
 
     #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
         flex-direction: column;
@@ -2023,6 +2117,7 @@ section.hero .home-text {
     #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card {
         width: 85%;
         margin-bottom: 3vh;
+        transform: scale(1) !important;
     }
 
     #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
@@ -2033,25 +2128,27 @@ section.hero .home-text {
         margin-top: -6rem;
     }
 
-    /* Blog area */
-    #blogPostsArea .carousel__slide figure {
-        height: 36vh;
-    }
 
     #faqPage>#faqPageInline>#faqHeading .UnderLineForTxt {
         width: 4%;
-    }
-
-    /* event page */
-    #eventPage {
-        height: 200vmax;
-        margin-top: -110vmax;
     }
 
     #eventPage button {
         padding: 0.7rem 3.1rem !important;
         font-size: 0.6rem !important;
         letter-spacing: 3px;
+    }
+
+    #eventPage>#eventArea>#eventContent>#eventContentContainer>.eventGrid-item{
+        height: 12rem;
+    }
+
+    #eventPage>#eventArea>#eventContent{
+        margin-top: 6rem;
+    }
+
+    #eventPage>#eventArea #eventContentButton{
+        margin-top: 11rem;
     }
 
     #eventPage>#eventArea>#eventContent>#eventContentContainer {
@@ -2087,21 +2184,12 @@ section.hero .home-text {
         width: 100%;
     }
 
-    #joinTeamPage {
-        height: 190vmax;
-    }
-
     #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder {
         height: 72%;
     }
 
     #showoffPage>#showOffPage1>.communityPastAcheivementsBorder {
         flex-direction: column;
-    }
-
-    #showoffPage {
-        height: 180vmax;
-        margin-top: 15%;
     }
 
     #showoffPage>#showOffPage2{
@@ -2184,11 +2272,6 @@ section.hero .home-text {
         line-height: 1.4;
     }
 
-    #faqPage {
-        margin-top: -56vmax;
-        height: 250vmax;
-    }
-
     /* footer section */
     #footerSection {
         height: 130vmax;
@@ -2198,11 +2281,6 @@ section.hero .home-text {
 @media (max-width: 360px) {
     #footerSection footer #footerText {
         margin-top: 98%;
-    }
-
-    #faqPage {
-        margin-top: -58vmax;
-        height: 160vmax;
     }
 
     #showoffPage>#showOffPage1>.communityPastAcheivementsBorder>.acheiventsBlockBorder>.acheiventsBlocks {
@@ -2224,197 +2302,7 @@ section.hero .home-text {
     }
 }
 
-@media (max-width: 576px) {
 
-    section.hero,
-    section.setup,
-    section.information {
-        text-align: center;
-    }
-
-    /*Navbar*/
-    .navbar {
-        padding: 20px 0;
-    }
-
-    .nav-link {
-        margin-left: 0;
-    }
-    .iconsHere i{
-        font-size: 1.7rem !important;
-    }
-    /*Hero setion*/
-    section.hero img {
-        padding-top: 2.5rem;
-    }
-
-    section.hero .text {
-        font-weight: 800;
-        font-size: 38px;
-        line-height: 53px;
-    }
-
-    .buttons .btn {
-        display: block;
-        margin: 1rem 0;
-    }
-
-    .buttons .ms-3 {
-        margin-left: 0 !important;
-    }
-
-    /* Footer setion*/
-    #footerSection footer #footerText{
-        margin-top: 80%;
-    }
-}
-
-
-/* carousel */
-
-.coreMembersCarosoul {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #EFEFEF;
-}
-
-.slide-container {
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
-}
-
-.slide-content {
-    margin: 0 40px 30px;
-    overflow: hidden;
-    border-radius: 25px;
-}
-
-.card {
-    border-radius: 25px;
-    background-color: #FFF;
-}
-
-.image-content,
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content {
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-}
-
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--primary-dark);
-    border-radius: 25px 25px 0 25px;
-}
-
-.overlay::before,
-.overlay::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: var(--primary-dark);
-}
-
-.overlay::after {
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-}
-
-.card-image {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 3px;
-}
-
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--primary-light);
-}
-
-.name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-}
-
-.description {
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-}
-
-.button {
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: var(--primary-light);
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background: var(--primary-dark);
-}
-
-.swiper-navBtn {
-    color: #6E93f7;
-    transition: color 0.3s ease;
-}
-
-.swiper-navBtn:hover {
-    color: var(--primary-dark);
-}
-
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 35px;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-button-prev {
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: var(--primary-light);
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--primary-dark);
-}
-
-
-/* carousel ends*/
 
 .iconsHere {
     /* border: 2px solid red; */
@@ -2435,7 +2323,8 @@ section.hero .home-text {
     cursor: pointer;
 }
 
-/* Animations */
+
+/* Left to Right Animations */
 
 .hidden001{
     opacity: 0;
