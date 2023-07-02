@@ -451,11 +451,11 @@ section.hero .home-text {
 }
 
 
-#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card img{
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card img {
     transition: all 0.5s ease-in-out;
 }
 
-#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card img:hover{
+#teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards>.card img:hover {
     transform: scale(1.15);
 }
 
@@ -570,7 +570,7 @@ section.hero .home-text {
     padding: 5.5rem 1rem;
 }
 
-#eventPage>#eventArea #eventContentButton{
+#eventPage>#eventArea #eventContentButton {
     margin-top: 4rem;
 }
 
@@ -1011,7 +1011,8 @@ section.hero .home-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 14px;
+    padding: 20px 14px;
+
 }
 
 .image-content {
@@ -1121,6 +1122,7 @@ section.hero .home-text {
 .swiper-pagination-bullet-active {
     background-color: var(--primary-dark);
 }
+
 /* carousel ends*/
 
 
@@ -1292,6 +1294,44 @@ section.hero .home-text {
 #showoffPage .slider .slide {
     height: 100px;
     width: 250px;
+}
+
+/* Testimonilas Page */
+.gradient-custom {
+    /* background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+        linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+        linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+        radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+        radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%); */
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+
+#testimonialPage #blogHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+#testimonialPage .container .card .card-body{
+    padding: 2rem 4rem;
+}
+
+#testimonialPage .container .card .card-body h4{
+    font-weight: 550;
+    font-size: 1.5rem;
+    color: #3c3c3c;
+}
+
+#testimonialPage .container .card .card-body p{
+    font-weight: 300;
+}
+
+.carousel-indicators {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
 }
 
 /*  FAQ's Page */
@@ -1733,7 +1773,7 @@ section.hero .home-text {
         font-size: 20px;
     }
 
-    .FooterLeftTop{
+    .FooterLeftTop {
         width: 45%;
     }
 
@@ -1809,7 +1849,7 @@ section.hero .home-text {
         margin: auto;
     }
 
-    
+
     .slide-content {
         margin: 0 45px;
     }
@@ -1971,9 +2011,11 @@ section.hero .home-text {
     .nav-link {
         margin-left: 0;
     }
-    .iconsHere i{
+
+    .iconsHere i {
         font-size: 1.7rem !important;
     }
+
     /*Hero setion*/
     section.hero img {
         padding-top: 2.5rem;
@@ -1995,7 +2037,7 @@ section.hero .home-text {
     }
 
     /* Footer setion*/
-    #footerSection footer #footerText{
+    #footerSection footer #footerText {
         margin-top: 80%;
     }
 }
@@ -2107,7 +2149,7 @@ section.hero .home-text {
         letter-spacing: 3px;
         padding: 9rem 0 14rem;
     }
-    
+
 
     #teamMembersPage>#teamMembersArea>#founderTeam>.founderMembersCards {
         flex-direction: column;
@@ -2139,15 +2181,15 @@ section.hero .home-text {
         letter-spacing: 3px;
     }
 
-    #eventPage>#eventArea>#eventContent>#eventContentContainer>.eventGrid-item{
+    #eventPage>#eventArea>#eventContent>#eventContentContainer>.eventGrid-item {
         height: 12rem;
     }
 
-    #eventPage>#eventArea>#eventContent{
+    #eventPage>#eventArea>#eventContent {
         margin-top: 6rem;
     }
 
-    #eventPage>#eventArea #eventContentButton{
+    #eventPage>#eventArea #eventContentButton {
         margin-top: 11rem;
     }
 
@@ -2192,7 +2234,7 @@ section.hero .home-text {
         flex-direction: column;
     }
 
-    #showoffPage>#showOffPage2{
+    #showoffPage>#showOffPage2 {
         margin-top: 15%;
     }
 
@@ -2219,18 +2261,19 @@ section.hero .home-text {
         font-weight: 800;
         letter-spacing: 3px;
     }
-    #footerSection footer #footerText p{
+
+    #footerSection footer #footerText p {
         font-size: 1rem;
         line-height: 1.75;
     }
 
-    .FooterLeftTop nav{
+    .FooterLeftTop nav {
         width: 100%;
         line-height: 2;
     }
 
     .FooterRightTop {
-        top: 70%;
+        top: 60%;
         right: -6%;
         height: 20%;
         width: 115%;
@@ -2290,19 +2333,19 @@ section.hero .home-text {
     #footerSection footer #footerText {
         margin-top: 111%;
     }
-    .FooterRightTop{
-        top: 73%;
-    }
-    .FooterRightTop .FooterText iframe{
+
+    .FooterRightTop .FooterText iframe {
         height: 70%;
     }
-    
-    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul{
+
+    #teamMembersPage>#teamMembersArea>#coreTeam>.CoreMembersCards>#coreMembersCarosoul {
         width: 100%;
     }
 }
 
-
+.btn:focus{
+    color: #128c7e;
+}
 
 .iconsHere {
     /* border: 2px solid red; */
@@ -2326,82 +2369,93 @@ section.hero .home-text {
 
 /* Left to Right Animations */
 
-.hidden001{
+.hidden001 {
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
     transform: translateX(-100%);
 }
 
-.show001{
+.show001 {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
-@media(prefers-reduced-motion){
-    .hidden001{
+@media(prefers-reduced-motion) {
+    .hidden001 {
         transition: none;
     }
 }
 
-#homePage .homeImg{
+#homePage .homeImg {
     transition-delay: 200ms;
 }
 
-#About-Page #aboutText{
+#About-Page #aboutText {
     transition-delay: 200ms;
 }
 
-.headingStyle{
+.headingStyle {
     transition-delay: 300ms;
 }
 
-.founderMembersCards .number2{
+.founderMembersCards .number2 {
     transition-delay: 200ms;
 }
-.founderMembersCards .number3{
+
+.founderMembersCards .number3 {
     transition-delay: 400ms;
 }
 
-#joinUsOnPlatforms .jp2{
+#joinUsOnPlatforms .jp2 {
     transition-delay: 200ms;
 }
-#joinUsOnPlatforms .jp3{
+
+#joinUsOnPlatforms .jp3 {
     transition-delay: 400ms;
 }
-#joinUsOnPlatforms .jp4{
+
+#joinUsOnPlatforms .jp4 {
     transition-delay: 600ms;
 }
-#joinUsOnPlatforms .jp5{
+
+#joinUsOnPlatforms .jp5 {
     transition-delay: 800ms;
 }
-#joinUsOnPlatforms .jp6{
+
+#joinUsOnPlatforms .jp6 {
     transition-delay: 1000ms;
 }
 
-#eventPage .number2{
+#eventPage .number2 {
     transition-delay: 200ms;
 }
-#eventPage .number3{
+
+#eventPage .number3 {
     transition-delay: 400ms;
 }
-#eventPage .number4{
+
+#eventPage .number4 {
     transition-delay: 600ms;
 }
-#eventPage .number5{
+
+#eventPage .number5 {
     transition-delay: 800ms;
 }
-#eventPage .number6{
+
+#eventPage .number6 {
     transition-delay: 1000ms;
 }
 
-#faqPage .number2{
+#faqPage .number2 {
     transition-delay: 200ms;
 }
-#faqPage .number3{
+
+#faqPage .number3 {
     transition-delay: 400ms;
 }
-#faqPage .number4{
+
+#faqPage .number4 {
     transition-delay: 600ms;
 }
